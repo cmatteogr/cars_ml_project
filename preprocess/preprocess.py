@@ -87,7 +87,7 @@ def map_drivetrain(drivetrain):
         return np.nan
     
     match drivetrain:
-        case 'All-wheel Drive' | 'Four-wheel Drive' | 'AWD' | '4WD' | '4x2' | 'Four Wheel Drive' | 'All-Wheel Drive with Locking and Limited-Slip Differential' | 'All-Wheel Drive':
+        case 'All-wheel Drive' | 'Four-wheel Drive' | 'AWD' | '4WD' | '4x2' | 'Four Wheel Drive' | 'All-Wheel Drive with Locking and Limited-Slip Differential' | 'All-Wheel Drive' | '4MATIC':
             return 'All-wheel Drive'
         case 'Rear-wheel Drive' | 'RWD':
             return 'Rear-wheel Drive'
