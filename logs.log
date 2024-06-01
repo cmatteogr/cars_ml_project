@@ -1,0 +1,2379 @@
+2024-05-30 06:57:25,483:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 06:57:25,484:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 06:57:25,484:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 06:57:25,484:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:05:44,926:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:05:44,926:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:05:44,926:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:05:44,926:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:11:13,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:11:13,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:11:13,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:11:13,980:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:17:00,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:17:00,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:17:00,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:17:00,845:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:27:50,285:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:27:50,286:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:27:50,286:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:27:50,286:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:32:22,292:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:32:22,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:32:22,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:32:22,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:37:01,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:37:01,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:37:01,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:37:01,937:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:41:32,276:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:41:32,276:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:41:32,276:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:41:32,277:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-30 07:42:04,945:INFO:PyCaret RegressionExperiment
+2024-05-30 07:42:04,946:INFO:Logging name: reg-default-name
+2024-05-30 07:42:04,946:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-05-30 07:42:04,946:INFO:version 3.3.2
+2024-05-30 07:42:04,946:INFO:Initializing setup()
+2024-05-30 07:42:04,946:INFO:self.USI: 7020
+2024-05-30 07:42:04,946:INFO:self._variable_keys: {'n_jobs_param', 'X', 'X_test', 'data', '_available_plots', 'fold_shuffle_param', 'pipeline', 'exp_id', 'fold_groups_param', '_ml_usecase', 'log_plots_param', 'gpu_param', 'idx', 'logging_param', 'USI', 'X_train', 'y_train', 'gpu_n_jobs_param', 'y', 'y_test', 'memory', 'target_param', 'fold_generator', 'seed', 'exp_name_log', 'transform_target_param', 'html_param'}
+2024-05-30 07:42:04,946:INFO:Checking environment
+2024-05-30 07:42:04,946:INFO:python_version: 3.10.11
+2024-05-30 07:42:04,947:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2024-05-30 07:42:04,947:INFO:machine: AMD64
+2024-05-30 07:42:04,947:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-30 07:42:04,954:INFO:Memory: svmem(total=25148166144, available=7599861760, percent=69.8, used=17548304384, free=7599861760)
+2024-05-30 07:42:04,954:INFO:Physical Core: 8
+2024-05-30 07:42:04,954:INFO:Logical Core: 16
+2024-05-30 07:42:04,954:INFO:Checking libraries
+2024-05-30 07:42:04,955:INFO:System:
+2024-05-30 07:42:04,955:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2024-05-30 07:42:04,955:INFO:executable: C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\Scripts\python.exe
+2024-05-30 07:42:04,955:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-30 07:42:04,955:INFO:PyCaret required dependencies:
+2024-05-30 07:42:05,110:INFO:                 pip: 24.0
+2024-05-30 07:42:05,110:INFO:          setuptools: 65.5.0
+2024-05-30 07:42:05,110:INFO:             pycaret: 3.3.2
+2024-05-30 07:42:05,110:INFO:             IPython: 8.23.0
+2024-05-30 07:42:05,110:INFO:          ipywidgets: 8.1.3
+2024-05-30 07:42:05,110:INFO:                tqdm: 4.66.2
+2024-05-30 07:42:05,110:INFO:               numpy: 1.26.4
+2024-05-30 07:42:05,110:INFO:              pandas: 2.1.4
+2024-05-30 07:42:05,110:INFO:              jinja2: 3.1.3
+2024-05-30 07:42:05,110:INFO:               scipy: 1.11.4
+2024-05-30 07:42:05,112:INFO:              joblib: 1.3.2
+2024-05-30 07:42:05,112:INFO:             sklearn: 1.4.2
+2024-05-30 07:42:05,112:INFO:                pyod: 1.1.3
+2024-05-30 07:42:05,112:INFO:            imblearn: 0.12.3
+2024-05-30 07:42:05,112:INFO:   category_encoders: 2.6.3
+2024-05-30 07:42:05,112:INFO:            lightgbm: 4.3.0
+2024-05-30 07:42:05,112:INFO:               numba: 0.59.1
+2024-05-30 07:42:05,112:INFO:            requests: 2.31.0
+2024-05-30 07:42:05,112:INFO:          matplotlib: 3.7.5
+2024-05-30 07:42:05,112:INFO:          scikitplot: 0.3.7
+2024-05-30 07:42:05,112:INFO:         yellowbrick: 1.5
+2024-05-30 07:42:05,112:INFO:              plotly: 5.22.0
+2024-05-30 07:42:05,112:INFO:    plotly-resampler: Not installed
+2024-05-30 07:42:05,112:INFO:             kaleido: 0.2.1
+2024-05-30 07:42:05,112:INFO:           schemdraw: 0.15
+2024-05-30 07:42:05,112:INFO:         statsmodels: 0.14.2
+2024-05-30 07:42:05,112:INFO:              sktime: 0.26.0
+2024-05-30 07:42:05,112:INFO:               tbats: 1.1.3
+2024-05-30 07:42:05,112:INFO:            pmdarima: 2.0.4
+2024-05-30 07:42:05,112:INFO:              psutil: 5.9.8
+2024-05-30 07:42:05,112:INFO:          markupsafe: 2.1.5
+2024-05-30 07:42:05,113:INFO:             pickle5: Not installed
+2024-05-30 07:42:05,113:INFO:         cloudpickle: 3.0.0
+2024-05-30 07:42:05,113:INFO:         deprecation: 2.1.0
+2024-05-30 07:42:05,113:INFO:              xxhash: 3.4.1
+2024-05-30 07:42:05,113:INFO:           wurlitzer: Not installed
+2024-05-30 07:42:05,113:INFO:PyCaret optional dependencies:
+2024-05-30 07:42:05,126:INFO:                shap: Not installed
+2024-05-30 07:42:05,126:INFO:           interpret: Not installed
+2024-05-30 07:42:05,126:INFO:                umap: Not installed
+2024-05-30 07:42:05,126:INFO:     ydata_profiling: 4.7.0
+2024-05-30 07:42:05,126:INFO:  explainerdashboard: Not installed
+2024-05-30 07:42:05,126:INFO:             autoviz: Not installed
+2024-05-30 07:42:05,126:INFO:           fairlearn: Not installed
+2024-05-30 07:42:05,126:INFO:          deepchecks: Not installed
+2024-05-30 07:42:05,126:INFO:             xgboost: Not installed
+2024-05-30 07:42:05,126:INFO:            catboost: 1.2.5
+2024-05-30 07:42:05,126:INFO:              kmodes: Not installed
+2024-05-30 07:42:05,126:INFO:             mlxtend: Not installed
+2024-05-30 07:42:05,126:INFO:       statsforecast: Not installed
+2024-05-30 07:42:05,126:INFO:        tune_sklearn: Not installed
+2024-05-30 07:42:05,126:INFO:                 ray: Not installed
+2024-05-30 07:42:05,126:INFO:            hyperopt: Not installed
+2024-05-30 07:42:05,126:INFO:              optuna: Not installed
+2024-05-30 07:42:05,126:INFO:               skopt: 0.10.1
+2024-05-30 07:42:05,126:INFO:              mlflow: 2.13.0
+2024-05-30 07:42:05,126:INFO:              gradio: Not installed
+2024-05-30 07:42:05,127:INFO:             fastapi: Not installed
+2024-05-30 07:42:05,127:INFO:             uvicorn: Not installed
+2024-05-30 07:42:05,127:INFO:              m2cgen: Not installed
+2024-05-30 07:42:05,127:INFO:           evidently: Not installed
+2024-05-30 07:42:05,127:INFO:               fugue: Not installed
+2024-05-30 07:42:05,127:INFO:           streamlit: Not installed
+2024-05-30 07:42:05,127:INFO:             prophet: Not installed
+2024-05-30 07:42:05,127:INFO:None
+2024-05-30 07:42:05,127:INFO:Set up data.
+2024-05-30 07:42:05,220:INFO:Set up folding strategy.
+2024-05-30 07:42:05,221:INFO:Set up train/test split.
+2024-05-30 07:42:05,287:INFO:Set up index.
+2024-05-30 07:42:05,288:INFO:Assigning column types.
+2024-05-30 07:42:05,322:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-30 07:42:05,323:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,329:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,334:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,427:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,472:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,473:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:05,474:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:05,475:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,480:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,485:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,569:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,623:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,623:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:05,624:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:05,624:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-05-30 07:42:05,629:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,634:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,719:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,765:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,766:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:05,766:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:05,770:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,776:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,857:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,902:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,902:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:05,903:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:05,903:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-05-30 07:42:05,912:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:05,997:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,045:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,045:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,045:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,056:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,140:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,186:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,186:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,186:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,187:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-05-30 07:42:06,276:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,323:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,325:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,325:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,420:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,467:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,468:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,468:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,469:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-30 07:42:06,564:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,611:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,612:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,705:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-30 07:42:06,749:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,749:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:06,750:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-05-30 07:42:06,889:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:06,889:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:07,034:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:07,035:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:07,040:INFO:Preparing preprocessing pipeline...
+2024-05-30 07:42:07,040:INFO:Set up simple imputation.
+2024-05-30 07:42:07,045:INFO:Set up column name cleaning.
+2024-05-30 07:42:07,158:INFO:Finished creating preprocessing pipeline.
+2024-05-30 07:42:07,169:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\CESAR_~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model...
+                                             'model_hashed_18',
+                                             'model_hashed_19',
+                                             'model_hashed_20',
+                                             'model_hashed_21',
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-05-30 07:42:07,169:INFO:Creating final display dataframe.
+2024-05-30 07:42:07,487:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2795
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape      (39245, 107)
+4        Transformed data shape      (39245, 107)
+5   Transformed train set shape      (27471, 107)
+6    Transformed test set shape      (11774, 107)
+7              Numeric features               106
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              7020
+2024-05-30 07:42:07,642:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:07,642:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:07,792:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-30 07:42:07,793:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-30 07:42:07,794:INFO:setup() successfully completed in 2.88s...............
+2024-05-30 07:42:07,794:INFO:Initializing compare_models()
+2024-05-30 07:42:07,795:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-05-30 07:42:07,795:INFO:Checking exceptions
+2024-05-30 07:42:07,810:INFO:Preparing display monitor
+2024-05-30 07:42:07,819:INFO:Initializing Linear Regression
+2024-05-30 07:42:07,819:INFO:Total runtime is 0.0 minutes
+2024-05-30 07:42:07,819:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:07,820:INFO:Initializing create_model()
+2024-05-30 07:42:07,820:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:07,820:INFO:Checking exceptions
+2024-05-30 07:42:07,820:INFO:Importing libraries
+2024-05-30 07:42:07,820:INFO:Copying training dataset
+2024-05-30 07:42:07,861:INFO:Defining folds
+2024-05-30 07:42:07,861:INFO:Declaring metric variables
+2024-05-30 07:42:07,861:INFO:Importing untrained model
+2024-05-30 07:42:07,861:INFO:Linear Regression Imported successfully
+2024-05-30 07:42:07,862:INFO:Starting cross validation
+2024-05-30 07:42:07,863:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:14,930:INFO:Calculating mean and std
+2024-05-30 07:42:14,932:INFO:Creating metrics dataframe
+2024-05-30 07:42:14,934:INFO:Uploading results into container
+2024-05-30 07:42:14,935:INFO:Uploading model into container now
+2024-05-30 07:42:14,936:INFO:_master_model_container: 1
+2024-05-30 07:42:14,936:INFO:_display_container: 2
+2024-05-30 07:42:14,936:INFO:LinearRegression(n_jobs=-1)
+2024-05-30 07:42:14,936:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:15,110:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:15,111:INFO:Creating metrics dataframe
+2024-05-30 07:42:15,112:INFO:Initializing Lasso Regression
+2024-05-30 07:42:15,113:INFO:Total runtime is 0.1215744694073995 minutes
+2024-05-30 07:42:15,113:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:15,113:INFO:Initializing create_model()
+2024-05-30 07:42:15,113:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:15,114:INFO:Checking exceptions
+2024-05-30 07:42:15,114:INFO:Importing libraries
+2024-05-30 07:42:15,114:INFO:Copying training dataset
+2024-05-30 07:42:15,149:INFO:Defining folds
+2024-05-30 07:42:15,149:INFO:Declaring metric variables
+2024-05-30 07:42:15,149:INFO:Importing untrained model
+2024-05-30 07:42:15,149:INFO:Lasso Regression Imported successfully
+2024-05-30 07:42:15,150:INFO:Starting cross validation
+2024-05-30 07:42:15,150:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:18,818:INFO:Calculating mean and std
+2024-05-30 07:42:18,818:INFO:Creating metrics dataframe
+2024-05-30 07:42:18,820:INFO:Uploading results into container
+2024-05-30 07:42:18,820:INFO:Uploading model into container now
+2024-05-30 07:42:18,820:INFO:_master_model_container: 2
+2024-05-30 07:42:18,821:INFO:_display_container: 2
+2024-05-30 07:42:18,821:INFO:Lasso(random_state=2795)
+2024-05-30 07:42:18,821:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:18,904:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:18,904:INFO:Creating metrics dataframe
+2024-05-30 07:42:18,908:INFO:Initializing Ridge Regression
+2024-05-30 07:42:18,908:INFO:Total runtime is 0.18481676578521727 minutes
+2024-05-30 07:42:18,908:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:18,908:INFO:Initializing create_model()
+2024-05-30 07:42:18,908:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:18,909:INFO:Checking exceptions
+2024-05-30 07:42:18,909:INFO:Importing libraries
+2024-05-30 07:42:18,909:INFO:Copying training dataset
+2024-05-30 07:42:18,945:INFO:Defining folds
+2024-05-30 07:42:18,945:INFO:Declaring metric variables
+2024-05-30 07:42:18,945:INFO:Importing untrained model
+2024-05-30 07:42:18,945:INFO:Ridge Regression Imported successfully
+2024-05-30 07:42:18,946:INFO:Starting cross validation
+2024-05-30 07:42:18,946:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:19,419:INFO:Calculating mean and std
+2024-05-30 07:42:19,419:INFO:Creating metrics dataframe
+2024-05-30 07:42:19,422:INFO:Uploading results into container
+2024-05-30 07:42:19,422:INFO:Uploading model into container now
+2024-05-30 07:42:19,424:INFO:_master_model_container: 3
+2024-05-30 07:42:19,424:INFO:_display_container: 2
+2024-05-30 07:42:19,424:INFO:Ridge(random_state=2795)
+2024-05-30 07:42:19,424:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:19,518:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:19,518:INFO:Creating metrics dataframe
+2024-05-30 07:42:19,521:INFO:Initializing Elastic Net
+2024-05-30 07:42:19,521:INFO:Total runtime is 0.1950295329093933 minutes
+2024-05-30 07:42:19,521:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:19,521:INFO:Initializing create_model()
+2024-05-30 07:42:19,521:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:19,521:INFO:Checking exceptions
+2024-05-30 07:42:19,522:INFO:Importing libraries
+2024-05-30 07:42:19,522:INFO:Copying training dataset
+2024-05-30 07:42:19,564:INFO:Defining folds
+2024-05-30 07:42:19,564:INFO:Declaring metric variables
+2024-05-30 07:42:19,565:INFO:Importing untrained model
+2024-05-30 07:42:19,565:INFO:Elastic Net Imported successfully
+2024-05-30 07:42:19,566:INFO:Starting cross validation
+2024-05-30 07:42:19,567:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:20,123:INFO:Calculating mean and std
+2024-05-30 07:42:20,124:INFO:Creating metrics dataframe
+2024-05-30 07:42:20,125:INFO:Uploading results into container
+2024-05-30 07:42:20,125:INFO:Uploading model into container now
+2024-05-30 07:42:20,127:INFO:_master_model_container: 4
+2024-05-30 07:42:20,127:INFO:_display_container: 2
+2024-05-30 07:42:20,127:INFO:ElasticNet(random_state=2795)
+2024-05-30 07:42:20,127:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:20,208:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:20,208:INFO:Creating metrics dataframe
+2024-05-30 07:42:20,210:INFO:Initializing Least Angle Regression
+2024-05-30 07:42:20,211:INFO:Total runtime is 0.20652579069137572 minutes
+2024-05-30 07:42:20,211:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:20,211:INFO:Initializing create_model()
+2024-05-30 07:42:20,211:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:20,211:INFO:Checking exceptions
+2024-05-30 07:42:20,211:INFO:Importing libraries
+2024-05-30 07:42:20,212:INFO:Copying training dataset
+2024-05-30 07:42:20,254:INFO:Defining folds
+2024-05-30 07:42:20,254:INFO:Declaring metric variables
+2024-05-30 07:42:20,255:INFO:Importing untrained model
+2024-05-30 07:42:20,255:INFO:Least Angle Regression Imported successfully
+2024-05-30 07:42:20,256:INFO:Starting cross validation
+2024-05-30 07:42:20,257:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:20,762:INFO:Calculating mean and std
+2024-05-30 07:42:20,763:INFO:Creating metrics dataframe
+2024-05-30 07:42:20,764:INFO:Uploading results into container
+2024-05-30 07:42:20,765:INFO:Uploading model into container now
+2024-05-30 07:42:20,765:INFO:_master_model_container: 5
+2024-05-30 07:42:20,765:INFO:_display_container: 2
+2024-05-30 07:42:20,766:INFO:Lars(random_state=2795)
+2024-05-30 07:42:20,766:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:20,852:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:20,852:INFO:Creating metrics dataframe
+2024-05-30 07:42:20,855:INFO:Initializing Lasso Least Angle Regression
+2024-05-30 07:42:20,856:INFO:Total runtime is 0.21728889147440592 minutes
+2024-05-30 07:42:20,856:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:20,856:INFO:Initializing create_model()
+2024-05-30 07:42:20,856:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:20,856:INFO:Checking exceptions
+2024-05-30 07:42:20,856:INFO:Importing libraries
+2024-05-30 07:42:20,856:INFO:Copying training dataset
+2024-05-30 07:42:20,893:INFO:Defining folds
+2024-05-30 07:42:20,894:INFO:Declaring metric variables
+2024-05-30 07:42:20,894:INFO:Importing untrained model
+2024-05-30 07:42:20,894:INFO:Lasso Least Angle Regression Imported successfully
+2024-05-30 07:42:20,894:INFO:Starting cross validation
+2024-05-30 07:42:20,896:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:21,295:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\linear_model\_least_angle.py:771: RuntimeWarning: overflow encountered in divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2024-05-30 07:42:21,432:INFO:Calculating mean and std
+2024-05-30 07:42:21,432:INFO:Creating metrics dataframe
+2024-05-30 07:42:21,434:INFO:Uploading results into container
+2024-05-30 07:42:21,435:INFO:Uploading model into container now
+2024-05-30 07:42:21,436:INFO:_master_model_container: 6
+2024-05-30 07:42:21,436:INFO:_display_container: 2
+2024-05-30 07:42:21,436:INFO:LassoLars(random_state=2795)
+2024-05-30 07:42:21,436:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:21,525:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:21,525:INFO:Creating metrics dataframe
+2024-05-30 07:42:21,528:INFO:Initializing Orthogonal Matching Pursuit
+2024-05-30 07:42:21,528:INFO:Total runtime is 0.22848659753799438 minutes
+2024-05-30 07:42:21,528:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:21,528:INFO:Initializing create_model()
+2024-05-30 07:42:21,528:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:21,528:INFO:Checking exceptions
+2024-05-30 07:42:21,529:INFO:Importing libraries
+2024-05-30 07:42:21,529:INFO:Copying training dataset
+2024-05-30 07:42:21,566:INFO:Defining folds
+2024-05-30 07:42:21,566:INFO:Declaring metric variables
+2024-05-30 07:42:21,566:INFO:Importing untrained model
+2024-05-30 07:42:21,566:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-05-30 07:42:21,566:INFO:Starting cross validation
+2024-05-30 07:42:21,567:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:22,049:INFO:Calculating mean and std
+2024-05-30 07:42:22,050:INFO:Creating metrics dataframe
+2024-05-30 07:42:22,052:INFO:Uploading results into container
+2024-05-30 07:42:22,052:INFO:Uploading model into container now
+2024-05-30 07:42:22,053:INFO:_master_model_container: 7
+2024-05-30 07:42:22,053:INFO:_display_container: 2
+2024-05-30 07:42:22,054:INFO:OrthogonalMatchingPursuit()
+2024-05-30 07:42:22,054:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:22,154:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:22,154:INFO:Creating metrics dataframe
+2024-05-30 07:42:22,157:INFO:Initializing Bayesian Ridge
+2024-05-30 07:42:22,157:INFO:Total runtime is 0.2389637589454651 minutes
+2024-05-30 07:42:22,158:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:22,158:INFO:Initializing create_model()
+2024-05-30 07:42:22,158:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:22,158:INFO:Checking exceptions
+2024-05-30 07:42:22,158:INFO:Importing libraries
+2024-05-30 07:42:22,158:INFO:Copying training dataset
+2024-05-30 07:42:22,200:INFO:Defining folds
+2024-05-30 07:42:22,200:INFO:Declaring metric variables
+2024-05-30 07:42:22,200:INFO:Importing untrained model
+2024-05-30 07:42:22,200:INFO:Bayesian Ridge Imported successfully
+2024-05-30 07:42:22,202:INFO:Starting cross validation
+2024-05-30 07:42:22,202:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:24,011:INFO:Calculating mean and std
+2024-05-30 07:42:24,011:INFO:Creating metrics dataframe
+2024-05-30 07:42:24,014:INFO:Uploading results into container
+2024-05-30 07:42:24,014:INFO:Uploading model into container now
+2024-05-30 07:42:24,015:INFO:_master_model_container: 8
+2024-05-30 07:42:24,015:INFO:_display_container: 2
+2024-05-30 07:42:24,015:INFO:BayesianRidge()
+2024-05-30 07:42:24,015:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:24,100:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:24,100:INFO:Creating metrics dataframe
+2024-05-30 07:42:24,103:INFO:Initializing Passive Aggressive Regressor
+2024-05-30 07:42:24,103:INFO:Total runtime is 0.27140031655629476 minutes
+2024-05-30 07:42:24,104:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:24,104:INFO:Initializing create_model()
+2024-05-30 07:42:24,104:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:24,104:INFO:Checking exceptions
+2024-05-30 07:42:24,104:INFO:Importing libraries
+2024-05-30 07:42:24,104:INFO:Copying training dataset
+2024-05-30 07:42:24,142:INFO:Defining folds
+2024-05-30 07:42:24,142:INFO:Declaring metric variables
+2024-05-30 07:42:24,142:INFO:Importing untrained model
+2024-05-30 07:42:24,142:INFO:Passive Aggressive Regressor Imported successfully
+2024-05-30 07:42:24,142:INFO:Starting cross validation
+2024-05-30 07:42:24,144:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:24,850:INFO:Calculating mean and std
+2024-05-30 07:42:24,850:INFO:Creating metrics dataframe
+2024-05-30 07:42:24,852:INFO:Uploading results into container
+2024-05-30 07:42:24,852:INFO:Uploading model into container now
+2024-05-30 07:42:24,852:INFO:_master_model_container: 9
+2024-05-30 07:42:24,853:INFO:_display_container: 2
+2024-05-30 07:42:24,853:INFO:PassiveAggressiveRegressor(random_state=2795)
+2024-05-30 07:42:24,853:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:24,933:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:24,933:INFO:Creating metrics dataframe
+2024-05-30 07:42:24,936:INFO:Initializing Huber Regressor
+2024-05-30 07:42:24,936:INFO:Total runtime is 0.2852802077929179 minutes
+2024-05-30 07:42:24,936:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:24,936:INFO:Initializing create_model()
+2024-05-30 07:42:24,936:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:24,936:INFO:Checking exceptions
+2024-05-30 07:42:24,936:INFO:Importing libraries
+2024-05-30 07:42:24,936:INFO:Copying training dataset
+2024-05-30 07:42:24,975:INFO:Defining folds
+2024-05-30 07:42:24,975:INFO:Declaring metric variables
+2024-05-30 07:42:24,975:INFO:Importing untrained model
+2024-05-30 07:42:24,975:INFO:Huber Regressor Imported successfully
+2024-05-30 07:42:24,975:INFO:Starting cross validation
+2024-05-30 07:42:24,976:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:28,356:INFO:Calculating mean and std
+2024-05-30 07:42:28,356:INFO:Creating metrics dataframe
+2024-05-30 07:42:28,358:INFO:Uploading results into container
+2024-05-30 07:42:28,358:INFO:Uploading model into container now
+2024-05-30 07:42:28,359:INFO:_master_model_container: 10
+2024-05-30 07:42:28,359:INFO:_display_container: 2
+2024-05-30 07:42:28,359:INFO:HuberRegressor()
+2024-05-30 07:42:28,359:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:28,440:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:28,440:INFO:Creating metrics dataframe
+2024-05-30 07:42:28,442:INFO:Initializing K Neighbors Regressor
+2024-05-30 07:42:28,442:INFO:Total runtime is 0.34371958176294964 minutes
+2024-05-30 07:42:28,442:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:28,443:INFO:Initializing create_model()
+2024-05-30 07:42:28,443:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:28,443:INFO:Checking exceptions
+2024-05-30 07:42:28,443:INFO:Importing libraries
+2024-05-30 07:42:28,443:INFO:Copying training dataset
+2024-05-30 07:42:28,477:INFO:Defining folds
+2024-05-30 07:42:28,477:INFO:Declaring metric variables
+2024-05-30 07:42:28,477:INFO:Importing untrained model
+2024-05-30 07:42:28,478:INFO:K Neighbors Regressor Imported successfully
+2024-05-30 07:42:28,478:INFO:Starting cross validation
+2024-05-30 07:42:28,479:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:30,165:INFO:Calculating mean and std
+2024-05-30 07:42:30,166:INFO:Creating metrics dataframe
+2024-05-30 07:42:30,167:INFO:Uploading results into container
+2024-05-30 07:42:30,168:INFO:Uploading model into container now
+2024-05-30 07:42:30,168:INFO:_master_model_container: 11
+2024-05-30 07:42:30,168:INFO:_display_container: 2
+2024-05-30 07:42:30,168:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-05-30 07:42:30,168:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:30,245:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:30,245:INFO:Creating metrics dataframe
+2024-05-30 07:42:30,247:INFO:Initializing Decision Tree Regressor
+2024-05-30 07:42:30,247:INFO:Total runtime is 0.37380847930908206 minutes
+2024-05-30 07:42:30,248:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:30,248:INFO:Initializing create_model()
+2024-05-30 07:42:30,248:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:30,248:INFO:Checking exceptions
+2024-05-30 07:42:30,248:INFO:Importing libraries
+2024-05-30 07:42:30,248:INFO:Copying training dataset
+2024-05-30 07:42:30,285:INFO:Defining folds
+2024-05-30 07:42:30,285:INFO:Declaring metric variables
+2024-05-30 07:42:30,285:INFO:Importing untrained model
+2024-05-30 07:42:30,286:INFO:Decision Tree Regressor Imported successfully
+2024-05-30 07:42:30,286:INFO:Starting cross validation
+2024-05-30 07:42:30,287:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:42:31,489:INFO:Calculating mean and std
+2024-05-30 07:42:31,489:INFO:Creating metrics dataframe
+2024-05-30 07:42:31,491:INFO:Uploading results into container
+2024-05-30 07:42:31,491:INFO:Uploading model into container now
+2024-05-30 07:42:31,491:INFO:_master_model_container: 12
+2024-05-30 07:42:31,491:INFO:_display_container: 2
+2024-05-30 07:42:31,492:INFO:DecisionTreeRegressor(random_state=2795)
+2024-05-30 07:42:31,492:INFO:create_model() successfully completed......................................
+2024-05-30 07:42:31,574:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:42:31,575:INFO:Creating metrics dataframe
+2024-05-30 07:42:31,578:INFO:Initializing Random Forest Regressor
+2024-05-30 07:42:31,579:INFO:Total runtime is 0.3959937532742819 minutes
+2024-05-30 07:42:31,579:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:42:31,579:INFO:Initializing create_model()
+2024-05-30 07:42:31,579:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:42:31,579:INFO:Checking exceptions
+2024-05-30 07:42:31,579:INFO:Importing libraries
+2024-05-30 07:42:31,580:INFO:Copying training dataset
+2024-05-30 07:42:31,618:INFO:Defining folds
+2024-05-30 07:42:31,618:INFO:Declaring metric variables
+2024-05-30 07:42:31,618:INFO:Importing untrained model
+2024-05-30 07:42:31,619:INFO:Random Forest Regressor Imported successfully
+2024-05-30 07:42:31,619:INFO:Starting cross validation
+2024-05-30 07:42:31,620:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:43:30,075:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,229:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,257:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,323:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,537:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,639:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,843:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,854:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:30,903:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:31,312:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:43:31,895:INFO:Calculating mean and std
+2024-05-30 07:43:31,896:INFO:Creating metrics dataframe
+2024-05-30 07:43:31,898:INFO:Uploading results into container
+2024-05-30 07:43:31,898:INFO:Uploading model into container now
+2024-05-30 07:43:31,898:INFO:_master_model_container: 13
+2024-05-30 07:43:31,898:INFO:_display_container: 2
+2024-05-30 07:43:31,899:INFO:RandomForestRegressor(n_jobs=-1, random_state=2795)
+2024-05-30 07:43:31,899:INFO:create_model() successfully completed......................................
+2024-05-30 07:43:31,980:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:43:31,980:INFO:Creating metrics dataframe
+2024-05-30 07:43:31,983:INFO:Initializing Extra Trees Regressor
+2024-05-30 07:43:31,983:INFO:Total runtime is 1.4027376929918927 minutes
+2024-05-30 07:43:31,984:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:43:31,984:INFO:Initializing create_model()
+2024-05-30 07:43:31,984:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:43:31,984:INFO:Checking exceptions
+2024-05-30 07:43:31,984:INFO:Importing libraries
+2024-05-30 07:43:31,984:INFO:Copying training dataset
+2024-05-30 07:43:32,025:INFO:Defining folds
+2024-05-30 07:43:32,025:INFO:Declaring metric variables
+2024-05-30 07:43:32,025:INFO:Importing untrained model
+2024-05-30 07:43:32,026:INFO:Extra Trees Regressor Imported successfully
+2024-05-30 07:43:32,026:INFO:Starting cross validation
+2024-05-30 07:43:32,027:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:44:30,522:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:42,102:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:44,924:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:45,557:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:46,057:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:54,544:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:56,733:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:57,175:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:57,250:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:58,688:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:44:59,128:INFO:Calculating mean and std
+2024-05-30 07:44:59,130:INFO:Creating metrics dataframe
+2024-05-30 07:44:59,134:INFO:Uploading results into container
+2024-05-30 07:44:59,136:INFO:Uploading model into container now
+2024-05-30 07:44:59,137:INFO:_master_model_container: 14
+2024-05-30 07:44:59,138:INFO:_display_container: 2
+2024-05-30 07:44:59,139:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=2795)
+2024-05-30 07:44:59,139:INFO:create_model() successfully completed......................................
+2024-05-30 07:44:59,275:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:44:59,275:INFO:Creating metrics dataframe
+2024-05-30 07:44:59,279:INFO:Initializing AdaBoost Regressor
+2024-05-30 07:44:59,279:INFO:Total runtime is 2.857669202486674 minutes
+2024-05-30 07:44:59,280:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:44:59,280:INFO:Initializing create_model()
+2024-05-30 07:44:59,280:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:44:59,280:INFO:Checking exceptions
+2024-05-30 07:44:59,280:INFO:Importing libraries
+2024-05-30 07:44:59,280:INFO:Copying training dataset
+2024-05-30 07:44:59,337:INFO:Defining folds
+2024-05-30 07:44:59,338:INFO:Declaring metric variables
+2024-05-30 07:44:59,338:INFO:Importing untrained model
+2024-05-30 07:44:59,339:INFO:AdaBoost Regressor Imported successfully
+2024-05-30 07:44:59,339:INFO:Starting cross validation
+2024-05-30 07:44:59,340:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:45:09,365:INFO:Calculating mean and std
+2024-05-30 07:45:09,366:INFO:Creating metrics dataframe
+2024-05-30 07:45:09,367:INFO:Uploading results into container
+2024-05-30 07:45:09,368:INFO:Uploading model into container now
+2024-05-30 07:45:09,369:INFO:_master_model_container: 15
+2024-05-30 07:45:09,369:INFO:_display_container: 2
+2024-05-30 07:45:09,369:INFO:AdaBoostRegressor(random_state=2795)
+2024-05-30 07:45:09,369:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:09,447:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:45:09,447:INFO:Creating metrics dataframe
+2024-05-30 07:45:09,449:INFO:Initializing Gradient Boosting Regressor
+2024-05-30 07:45:09,450:INFO:Total runtime is 3.027182956536611 minutes
+2024-05-30 07:45:09,450:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:45:09,450:INFO:Initializing create_model()
+2024-05-30 07:45:09,450:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:09,450:INFO:Checking exceptions
+2024-05-30 07:45:09,450:INFO:Importing libraries
+2024-05-30 07:45:09,450:INFO:Copying training dataset
+2024-05-30 07:45:09,485:INFO:Defining folds
+2024-05-30 07:45:09,485:INFO:Declaring metric variables
+2024-05-30 07:45:09,485:INFO:Importing untrained model
+2024-05-30 07:45:09,485:INFO:Gradient Boosting Regressor Imported successfully
+2024-05-30 07:45:09,485:INFO:Starting cross validation
+2024-05-30 07:45:09,486:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:45:20,070:INFO:Calculating mean and std
+2024-05-30 07:45:20,070:INFO:Creating metrics dataframe
+2024-05-30 07:45:20,073:INFO:Uploading results into container
+2024-05-30 07:45:20,074:INFO:Uploading model into container now
+2024-05-30 07:45:20,075:INFO:_master_model_container: 16
+2024-05-30 07:45:20,075:INFO:_display_container: 2
+2024-05-30 07:45:20,075:INFO:GradientBoostingRegressor(random_state=2795)
+2024-05-30 07:45:20,075:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:20,186:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:45:20,186:INFO:Creating metrics dataframe
+2024-05-30 07:45:20,189:INFO:Initializing Light Gradient Boosting Machine
+2024-05-30 07:45:20,189:INFO:Total runtime is 3.2061746358871464 minutes
+2024-05-30 07:45:20,190:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:45:20,190:INFO:Initializing create_model()
+2024-05-30 07:45:20,190:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:20,190:INFO:Checking exceptions
+2024-05-30 07:45:20,190:INFO:Importing libraries
+2024-05-30 07:45:20,190:INFO:Copying training dataset
+2024-05-30 07:45:20,239:INFO:Defining folds
+2024-05-30 07:45:20,240:INFO:Declaring metric variables
+2024-05-30 07:45:20,240:INFO:Importing untrained model
+2024-05-30 07:45:20,240:INFO:Light Gradient Boosting Machine Imported successfully
+2024-05-30 07:45:20,241:INFO:Starting cross validation
+2024-05-30 07:45:20,242:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:45:22,410:INFO:Calculating mean and std
+2024-05-30 07:45:22,412:INFO:Creating metrics dataframe
+2024-05-30 07:45:22,415:INFO:Uploading results into container
+2024-05-30 07:45:22,416:INFO:Uploading model into container now
+2024-05-30 07:45:22,417:INFO:_master_model_container: 17
+2024-05-30 07:45:22,417:INFO:_display_container: 2
+2024-05-30 07:45:22,418:INFO:LGBMRegressor(n_jobs=-1, random_state=2795)
+2024-05-30 07:45:22,418:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:22,524:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:45:22,524:INFO:Creating metrics dataframe
+2024-05-30 07:45:22,528:INFO:Initializing CatBoost Regressor
+2024-05-30 07:45:22,528:INFO:Total runtime is 3.245154472192129 minutes
+2024-05-30 07:45:22,528:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:45:22,528:INFO:Initializing create_model()
+2024-05-30 07:45:22,528:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:22,529:INFO:Checking exceptions
+2024-05-30 07:45:22,529:INFO:Importing libraries
+2024-05-30 07:45:22,529:INFO:Copying training dataset
+2024-05-30 07:45:22,572:INFO:Defining folds
+2024-05-30 07:45:22,572:INFO:Declaring metric variables
+2024-05-30 07:45:22,572:INFO:Importing untrained model
+2024-05-30 07:45:22,578:INFO:CatBoost Regressor Imported successfully
+2024-05-30 07:45:22,579:INFO:Starting cross validation
+2024-05-30 07:45:22,580:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:45:48,998:INFO:Calculating mean and std
+2024-05-30 07:45:48,999:INFO:Creating metrics dataframe
+2024-05-30 07:45:49,002:INFO:Uploading results into container
+2024-05-30 07:45:49,002:INFO:Uploading model into container now
+2024-05-30 07:45:49,003:INFO:_master_model_container: 18
+2024-05-30 07:45:49,003:INFO:_display_container: 2
+2024-05-30 07:45:49,003:INFO:<catboost.core.CatBoostRegressor object at 0x000001EEE6A13700>
+2024-05-30 07:45:49,003:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:49,092:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:45:49,092:INFO:Creating metrics dataframe
+2024-05-30 07:45:49,096:INFO:Initializing Dummy Regressor
+2024-05-30 07:45:49,096:INFO:Total runtime is 3.6879547437032065 minutes
+2024-05-30 07:45:49,096:INFO:SubProcess create_model() called ==================================
+2024-05-30 07:45:49,097:INFO:Initializing create_model()
+2024-05-30 07:45:49,097:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001EEE6A20DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:49,097:INFO:Checking exceptions
+2024-05-30 07:45:49,097:INFO:Importing libraries
+2024-05-30 07:45:49,097:INFO:Copying training dataset
+2024-05-30 07:45:49,139:INFO:Defining folds
+2024-05-30 07:45:49,139:INFO:Declaring metric variables
+2024-05-30 07:45:49,139:INFO:Importing untrained model
+2024-05-30 07:45:49,140:INFO:Dummy Regressor Imported successfully
+2024-05-30 07:45:49,140:INFO:Starting cross validation
+2024-05-30 07:45:49,142:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:45:49,616:INFO:Calculating mean and std
+2024-05-30 07:45:49,617:INFO:Creating metrics dataframe
+2024-05-30 07:45:49,619:INFO:Uploading results into container
+2024-05-30 07:45:49,620:INFO:Uploading model into container now
+2024-05-30 07:45:49,620:INFO:_master_model_container: 19
+2024-05-30 07:45:49,620:INFO:_display_container: 2
+2024-05-30 07:45:49,620:INFO:DummyRegressor()
+2024-05-30 07:45:49,620:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:49,699:INFO:SubProcess create_model() end ==================================
+2024-05-30 07:45:49,699:INFO:Creating metrics dataframe
+2024-05-30 07:45:49,710:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2024-05-30 07:45:49,711:INFO:Initializing create_model()
+2024-05-30 07:45:49,712:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=<catboost.core.CatBoostRegressor object at 0x000001EEE6A13700>, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:49,712:INFO:Checking exceptions
+2024-05-30 07:45:49,712:INFO:Importing libraries
+2024-05-30 07:45:49,712:INFO:Copying training dataset
+2024-05-30 07:45:49,747:INFO:Defining folds
+2024-05-30 07:45:49,747:INFO:Declaring metric variables
+2024-05-30 07:45:49,747:INFO:Importing untrained model
+2024-05-30 07:45:49,747:INFO:Declaring custom model
+2024-05-30 07:45:49,748:INFO:CatBoost Regressor Imported successfully
+2024-05-30 07:45:49,748:INFO:Cross validation set to False
+2024-05-30 07:45:49,749:INFO:Fitting Model
+2024-05-30 07:45:55,592:INFO:<catboost.core.CatBoostRegressor object at 0x000001EEE6A12EC0>
+2024-05-30 07:45:55,592:INFO:create_model() successfully completed......................................
+2024-05-30 07:45:55,709:INFO:_master_model_container: 19
+2024-05-30 07:45:55,710:INFO:_display_container: 2
+2024-05-30 07:45:55,710:INFO:<catboost.core.CatBoostRegressor object at 0x000001EEE6A12EC0>
+2024-05-30 07:45:55,710:INFO:compare_models() successfully completed......................................
+2024-05-30 07:45:55,710:INFO:Initializing create_model()
+2024-05-30 07:45:55,710:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-30 07:45:55,710:INFO:Checking exceptions
+2024-05-30 07:45:55,711:INFO:Importing libraries
+2024-05-30 07:45:55,712:INFO:Copying training dataset
+2024-05-30 07:45:55,748:INFO:Defining folds
+2024-05-30 07:45:55,748:INFO:Declaring metric variables
+2024-05-30 07:45:55,748:INFO:Importing untrained model
+2024-05-30 07:45:55,748:INFO:Random Forest Regressor Imported successfully
+2024-05-30 07:45:55,748:INFO:Starting cross validation
+2024-05-30 07:45:55,749:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-30 07:46:43,560:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:46:45,637:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:46:48,140:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:46:56,356:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:46:56,795:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:46:59,119:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:47:02,167:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:47:02,564:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:47:02,965:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:47:10,705:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:47:11,040:INFO:Calculating mean and std
+2024-05-30 07:47:11,041:INFO:Creating metrics dataframe
+2024-05-30 07:47:11,043:INFO:Finalizing model
+2024-05-30 07:47:14,537:INFO:Uploading results into container
+2024-05-30 07:47:14,538:INFO:Uploading model into container now
+2024-05-30 07:47:14,552:INFO:_master_model_container: 20
+2024-05-30 07:47:14,552:INFO:_display_container: 3
+2024-05-30 07:47:14,552:INFO:RandomForestRegressor(n_jobs=-1, random_state=2795)
+2024-05-30 07:47:14,552:INFO:create_model() successfully completed......................................
+2024-05-30 07:47:14,634:INFO:Initializing tune_model()
+2024-05-30 07:47:14,634:INFO:tune_model(estimator=RandomForestRegressor(n_jobs=-1, random_state=2795), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001EEE8C26110>)
+2024-05-30 07:47:14,634:INFO:Checking exceptions
+2024-05-30 07:47:14,648:INFO:Copying training dataset
+2024-05-30 07:47:14,669:INFO:Checking base model
+2024-05-30 07:47:14,669:INFO:Base model : Random Forest Regressor
+2024-05-30 07:47:14,669:INFO:Declaring metric variables
+2024-05-30 07:47:14,669:INFO:Defining Hyperparameters
+2024-05-30 07:47:14,748:INFO:Tuning with n_jobs=-1
+2024-05-30 07:47:14,748:INFO:Initializing RandomizedSearchCV
+2024-05-30 07:48:01,769:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:02,271:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:02,504:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:04,058:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:04,669:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:04,972:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:18,960:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:19,455:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:31,568:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:32,460:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:37,838:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:38,437:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:39,878:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:40,371:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:44,731:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:45,743:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:47,862:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:49,623:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:51,302:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:51,746:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:52,300:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:53,109:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:53,579:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:53,992:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:55,134:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:55,163:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:55,765:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:56,614:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:57,407:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:48:57,839:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:03,297:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:03,692:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:03,874:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:04,474:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:05,597:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:06,337:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:11,356:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:11,685:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:12,216:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:49:12,522:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:59:35,422:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:59:45,699:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:59:54,276:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 07:59:55,902:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 08:00:06,031:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 08:00:08,749:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 08:00:13,722:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 08:00:16,746:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-30 08:00:19,182:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:12:45,511:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-31 18:12:45,511:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-31 18:12:45,511:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-31 18:12:45,511:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-31 18:13:16,065:INFO:PyCaret RegressionExperiment
+2024-05-31 18:13:16,065:INFO:Logging name: reg-default-name
+2024-05-31 18:13:16,065:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-05-31 18:13:16,065:INFO:version 3.3.2
+2024-05-31 18:13:16,065:INFO:Initializing setup()
+2024-05-31 18:13:16,065:INFO:self.USI: 0c09
+2024-05-31 18:13:16,065:INFO:self._variable_keys: {'logging_param', 'seed', 'n_jobs_param', 'exp_name_log', 'idx', 'USI', 'fold_shuffle_param', 'y', 'y_test', 'target_param', '_ml_usecase', 'gpu_n_jobs_param', 'data', 'transform_target_param', 'log_plots_param', 'memory', 'X_test', 'pipeline', '_available_plots', 'fold_generator', 'X', 'fold_groups_param', 'X_train', 'exp_id', 'y_train', 'html_param', 'gpu_param'}
+2024-05-31 18:13:16,065:INFO:Checking environment
+2024-05-31 18:13:16,065:INFO:python_version: 3.10.11
+2024-05-31 18:13:16,065:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2024-05-31 18:13:16,065:INFO:machine: AMD64
+2024-05-31 18:13:16,066:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-31 18:13:16,075:INFO:Memory: svmem(total=25148166144, available=8127619072, percent=67.7, used=17020547072, free=8127619072)
+2024-05-31 18:13:16,076:INFO:Physical Core: 8
+2024-05-31 18:13:16,076:INFO:Logical Core: 16
+2024-05-31 18:13:16,076:INFO:Checking libraries
+2024-05-31 18:13:16,076:INFO:System:
+2024-05-31 18:13:16,076:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2024-05-31 18:13:16,076:INFO:executable: C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\Scripts\python.exe
+2024-05-31 18:13:16,076:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-31 18:13:16,076:INFO:PyCaret required dependencies:
+2024-05-31 18:13:16,203:INFO:                 pip: 24.0
+2024-05-31 18:13:16,203:INFO:          setuptools: 65.5.0
+2024-05-31 18:13:16,203:INFO:             pycaret: 3.3.2
+2024-05-31 18:13:16,203:INFO:             IPython: 8.23.0
+2024-05-31 18:13:16,203:INFO:          ipywidgets: 8.1.3
+2024-05-31 18:13:16,203:INFO:                tqdm: 4.66.2
+2024-05-31 18:13:16,203:INFO:               numpy: 1.26.4
+2024-05-31 18:13:16,203:INFO:              pandas: 2.1.4
+2024-05-31 18:13:16,203:INFO:              jinja2: 3.1.3
+2024-05-31 18:13:16,203:INFO:               scipy: 1.11.4
+2024-05-31 18:13:16,203:INFO:              joblib: 1.3.2
+2024-05-31 18:13:16,203:INFO:             sklearn: 1.4.2
+2024-05-31 18:13:16,203:INFO:                pyod: 1.1.3
+2024-05-31 18:13:16,203:INFO:            imblearn: 0.12.3
+2024-05-31 18:13:16,203:INFO:   category_encoders: 2.6.3
+2024-05-31 18:13:16,203:INFO:            lightgbm: 4.3.0
+2024-05-31 18:13:16,203:INFO:               numba: 0.59.1
+2024-05-31 18:13:16,203:INFO:            requests: 2.31.0
+2024-05-31 18:13:16,203:INFO:          matplotlib: 3.7.5
+2024-05-31 18:13:16,203:INFO:          scikitplot: 0.3.7
+2024-05-31 18:13:16,203:INFO:         yellowbrick: 1.5
+2024-05-31 18:13:16,203:INFO:              plotly: 5.22.0
+2024-05-31 18:13:16,203:INFO:    plotly-resampler: Not installed
+2024-05-31 18:13:16,203:INFO:             kaleido: 0.2.1
+2024-05-31 18:13:16,203:INFO:           schemdraw: 0.15
+2024-05-31 18:13:16,203:INFO:         statsmodels: 0.14.2
+2024-05-31 18:13:16,203:INFO:              sktime: 0.26.0
+2024-05-31 18:13:16,203:INFO:               tbats: 1.1.3
+2024-05-31 18:13:16,203:INFO:            pmdarima: 2.0.4
+2024-05-31 18:13:16,203:INFO:              psutil: 5.9.8
+2024-05-31 18:13:16,203:INFO:          markupsafe: 2.1.5
+2024-05-31 18:13:16,203:INFO:             pickle5: Not installed
+2024-05-31 18:13:16,203:INFO:         cloudpickle: 3.0.0
+2024-05-31 18:13:16,203:INFO:         deprecation: 2.1.0
+2024-05-31 18:13:16,203:INFO:              xxhash: 3.4.1
+2024-05-31 18:13:16,203:INFO:           wurlitzer: Not installed
+2024-05-31 18:13:16,203:INFO:PyCaret optional dependencies:
+2024-05-31 18:13:16,217:INFO:                shap: Not installed
+2024-05-31 18:13:16,217:INFO:           interpret: Not installed
+2024-05-31 18:13:16,217:INFO:                umap: Not installed
+2024-05-31 18:13:16,217:INFO:     ydata_profiling: 4.7.0
+2024-05-31 18:13:16,217:INFO:  explainerdashboard: Not installed
+2024-05-31 18:13:16,217:INFO:             autoviz: Not installed
+2024-05-31 18:13:16,217:INFO:           fairlearn: Not installed
+2024-05-31 18:13:16,217:INFO:          deepchecks: Not installed
+2024-05-31 18:13:16,218:INFO:             xgboost: Not installed
+2024-05-31 18:13:16,218:INFO:            catboost: 1.2.5
+2024-05-31 18:13:16,218:INFO:              kmodes: Not installed
+2024-05-31 18:13:16,218:INFO:             mlxtend: Not installed
+2024-05-31 18:13:16,218:INFO:       statsforecast: Not installed
+2024-05-31 18:13:16,218:INFO:        tune_sklearn: Not installed
+2024-05-31 18:13:16,218:INFO:                 ray: Not installed
+2024-05-31 18:13:16,218:INFO:            hyperopt: Not installed
+2024-05-31 18:13:16,218:INFO:              optuna: Not installed
+2024-05-31 18:13:16,218:INFO:               skopt: 0.10.1
+2024-05-31 18:13:16,218:INFO:              mlflow: 2.13.0
+2024-05-31 18:13:16,218:INFO:              gradio: Not installed
+2024-05-31 18:13:16,218:INFO:             fastapi: Not installed
+2024-05-31 18:13:16,218:INFO:             uvicorn: Not installed
+2024-05-31 18:13:16,218:INFO:              m2cgen: Not installed
+2024-05-31 18:13:16,219:INFO:           evidently: Not installed
+2024-05-31 18:13:16,219:INFO:               fugue: Not installed
+2024-05-31 18:13:16,219:INFO:           streamlit: Not installed
+2024-05-31 18:13:16,219:INFO:             prophet: Not installed
+2024-05-31 18:13:16,219:INFO:None
+2024-05-31 18:13:16,219:INFO:Set up data.
+2024-05-31 18:13:16,308:INFO:Set up folding strategy.
+2024-05-31 18:13:16,309:INFO:Set up train/test split.
+2024-05-31 18:13:16,369:INFO:Set up index.
+2024-05-31 18:13:16,371:INFO:Assigning column types.
+2024-05-31 18:13:16,403:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-31 18:13:16,404:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,411:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,415:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,496:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,548:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,549:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:16,549:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:16,550:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,554:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,559:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,658:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,704:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,704:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:16,704:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:16,705:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-05-31 18:13:16,710:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,714:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,800:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,851:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,852:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:16,852:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:16,857:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,862:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:16,948:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,001:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,002:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,002:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,002:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-05-31 18:13:17,011:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,116:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,166:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,166:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,167:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,178:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,285:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,346:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,346:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,347:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,347:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-05-31 18:13:17,458:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,515:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,516:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,516:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,632:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,692:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,693:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,693:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,694:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-31 18:13:17,811:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:17,862:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:17,862:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:17,980:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-31 18:13:18,032:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:18,032:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:18,033:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-05-31 18:13:18,171:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:18,171:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:18,316:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:18,316:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:18,324:INFO:Preparing preprocessing pipeline...
+2024-05-31 18:13:18,324:INFO:Set up simple imputation.
+2024-05-31 18:13:18,330:INFO:Set up column name cleaning.
+2024-05-31 18:13:18,453:INFO:Finished creating preprocessing pipeline.
+2024-05-31 18:13:18,459:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\CESAR_~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model...
+                                             'model_hashed_18',
+                                             'model_hashed_19',
+                                             'model_hashed_20',
+                                             'model_hashed_21',
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2024-05-31 18:13:18,460:INFO:Creating final display dataframe.
+2024-05-31 18:13:18,800:INFO:Setup _display_container:                     Description             Value
+0                    Session id              6633
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape      (39247, 107)
+4        Transformed data shape      (39247, 107)
+5   Transformed train set shape      (27472, 107)
+6    Transformed test set shape      (11775, 107)
+7              Numeric features               106
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator             KFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  reg-default-name
+18                          USI              0c09
+2024-05-31 18:13:18,970:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:18,970:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:19,131:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-31 18:13:19,131:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-31 18:13:19,132:INFO:setup() successfully completed in 3.08s...............
+2024-05-31 18:13:19,133:INFO:Initializing compare_models()
+2024-05-31 18:13:19,133:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-05-31 18:13:19,133:INFO:Checking exceptions
+2024-05-31 18:13:19,146:INFO:Preparing display monitor
+2024-05-31 18:13:19,160:INFO:Initializing Linear Regression
+2024-05-31 18:13:19,161:INFO:Total runtime is 1.6717116038004556e-05 minutes
+2024-05-31 18:13:19,161:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:19,161:INFO:Initializing create_model()
+2024-05-31 18:13:19,161:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:19,161:INFO:Checking exceptions
+2024-05-31 18:13:19,161:INFO:Importing libraries
+2024-05-31 18:13:19,161:INFO:Copying training dataset
+2024-05-31 18:13:19,207:INFO:Defining folds
+2024-05-31 18:13:19,208:INFO:Declaring metric variables
+2024-05-31 18:13:19,208:INFO:Importing untrained model
+2024-05-31 18:13:19,209:INFO:Linear Regression Imported successfully
+2024-05-31 18:13:19,209:INFO:Starting cross validation
+2024-05-31 18:13:19,211:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:24,916:INFO:Calculating mean and std
+2024-05-31 18:13:24,917:INFO:Creating metrics dataframe
+2024-05-31 18:13:24,919:INFO:Uploading results into container
+2024-05-31 18:13:24,919:INFO:Uploading model into container now
+2024-05-31 18:13:24,919:INFO:_master_model_container: 1
+2024-05-31 18:13:24,919:INFO:_display_container: 2
+2024-05-31 18:13:24,920:INFO:LinearRegression(n_jobs=-1)
+2024-05-31 18:13:24,920:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:25,029:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:25,029:INFO:Creating metrics dataframe
+2024-05-31 18:13:25,032:INFO:Initializing Lasso Regression
+2024-05-31 18:13:25,033:INFO:Total runtime is 0.09788614511489868 minutes
+2024-05-31 18:13:25,033:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:25,034:INFO:Initializing create_model()
+2024-05-31 18:13:25,034:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:25,034:INFO:Checking exceptions
+2024-05-31 18:13:25,034:INFO:Importing libraries
+2024-05-31 18:13:25,034:INFO:Copying training dataset
+2024-05-31 18:13:25,074:INFO:Defining folds
+2024-05-31 18:13:25,074:INFO:Declaring metric variables
+2024-05-31 18:13:25,074:INFO:Importing untrained model
+2024-05-31 18:13:25,074:INFO:Lasso Regression Imported successfully
+2024-05-31 18:13:25,075:INFO:Starting cross validation
+2024-05-31 18:13:25,075:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:28,293:INFO:Calculating mean and std
+2024-05-31 18:13:28,294:INFO:Creating metrics dataframe
+2024-05-31 18:13:28,295:INFO:Uploading results into container
+2024-05-31 18:13:28,296:INFO:Uploading model into container now
+2024-05-31 18:13:28,296:INFO:_master_model_container: 2
+2024-05-31 18:13:28,296:INFO:_display_container: 2
+2024-05-31 18:13:28,296:INFO:Lasso(random_state=6633)
+2024-05-31 18:13:28,296:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:28,372:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:28,372:INFO:Creating metrics dataframe
+2024-05-31 18:13:28,381:INFO:Initializing Ridge Regression
+2024-05-31 18:13:28,382:INFO:Total runtime is 0.15370041529337564 minutes
+2024-05-31 18:13:28,382:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:28,382:INFO:Initializing create_model()
+2024-05-31 18:13:28,382:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:28,382:INFO:Checking exceptions
+2024-05-31 18:13:28,382:INFO:Importing libraries
+2024-05-31 18:13:28,382:INFO:Copying training dataset
+2024-05-31 18:13:28,415:INFO:Defining folds
+2024-05-31 18:13:28,415:INFO:Declaring metric variables
+2024-05-31 18:13:28,415:INFO:Importing untrained model
+2024-05-31 18:13:28,415:INFO:Ridge Regression Imported successfully
+2024-05-31 18:13:28,415:INFO:Starting cross validation
+2024-05-31 18:13:28,416:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:28,884:INFO:Calculating mean and std
+2024-05-31 18:13:28,885:INFO:Creating metrics dataframe
+2024-05-31 18:13:28,887:INFO:Uploading results into container
+2024-05-31 18:13:28,887:INFO:Uploading model into container now
+2024-05-31 18:13:28,888:INFO:_master_model_container: 3
+2024-05-31 18:13:28,888:INFO:_display_container: 2
+2024-05-31 18:13:28,888:INFO:Ridge(random_state=6633)
+2024-05-31 18:13:28,888:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:28,983:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:28,983:INFO:Creating metrics dataframe
+2024-05-31 18:13:28,986:INFO:Initializing Elastic Net
+2024-05-31 18:13:28,986:INFO:Total runtime is 0.16376846631368 minutes
+2024-05-31 18:13:28,987:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:28,987:INFO:Initializing create_model()
+2024-05-31 18:13:28,987:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:28,987:INFO:Checking exceptions
+2024-05-31 18:13:28,987:INFO:Importing libraries
+2024-05-31 18:13:28,987:INFO:Copying training dataset
+2024-05-31 18:13:29,027:INFO:Defining folds
+2024-05-31 18:13:29,027:INFO:Declaring metric variables
+2024-05-31 18:13:29,027:INFO:Importing untrained model
+2024-05-31 18:13:29,027:INFO:Elastic Net Imported successfully
+2024-05-31 18:13:29,027:INFO:Starting cross validation
+2024-05-31 18:13:29,029:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:29,539:INFO:Calculating mean and std
+2024-05-31 18:13:29,540:INFO:Creating metrics dataframe
+2024-05-31 18:13:29,542:INFO:Uploading results into container
+2024-05-31 18:13:29,542:INFO:Uploading model into container now
+2024-05-31 18:13:29,542:INFO:_master_model_container: 4
+2024-05-31 18:13:29,542:INFO:_display_container: 2
+2024-05-31 18:13:29,543:INFO:ElasticNet(random_state=6633)
+2024-05-31 18:13:29,543:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:29,623:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:29,623:INFO:Creating metrics dataframe
+2024-05-31 18:13:29,625:INFO:Initializing Least Angle Regression
+2024-05-31 18:13:29,625:INFO:Total runtime is 0.17442389329274494 minutes
+2024-05-31 18:13:29,625:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:29,625:INFO:Initializing create_model()
+2024-05-31 18:13:29,625:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:29,626:INFO:Checking exceptions
+2024-05-31 18:13:29,626:INFO:Importing libraries
+2024-05-31 18:13:29,626:INFO:Copying training dataset
+2024-05-31 18:13:29,660:INFO:Defining folds
+2024-05-31 18:13:29,660:INFO:Declaring metric variables
+2024-05-31 18:13:29,661:INFO:Importing untrained model
+2024-05-31 18:13:29,661:INFO:Least Angle Regression Imported successfully
+2024-05-31 18:13:29,661:INFO:Starting cross validation
+2024-05-31 18:13:29,662:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:29,964:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\linear_model\_least_angle.py:780: RuntimeWarning: overflow encountered in divide
+  z = -coef[active] / (least_squares + tiny32)
+
+2024-05-31 18:13:30,160:INFO:Calculating mean and std
+2024-05-31 18:13:30,160:INFO:Creating metrics dataframe
+2024-05-31 18:13:30,162:INFO:Uploading results into container
+2024-05-31 18:13:30,162:INFO:Uploading model into container now
+2024-05-31 18:13:30,163:INFO:_master_model_container: 5
+2024-05-31 18:13:30,163:INFO:_display_container: 2
+2024-05-31 18:13:30,163:INFO:Lars(random_state=6633)
+2024-05-31 18:13:30,163:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:30,240:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:30,240:INFO:Creating metrics dataframe
+2024-05-31 18:13:30,242:INFO:Initializing Lasso Least Angle Regression
+2024-05-31 18:13:30,242:INFO:Total runtime is 0.18469716707865394 minutes
+2024-05-31 18:13:30,242:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:30,243:INFO:Initializing create_model()
+2024-05-31 18:13:30,243:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:30,243:INFO:Checking exceptions
+2024-05-31 18:13:30,243:INFO:Importing libraries
+2024-05-31 18:13:30,243:INFO:Copying training dataset
+2024-05-31 18:13:30,277:INFO:Defining folds
+2024-05-31 18:13:30,277:INFO:Declaring metric variables
+2024-05-31 18:13:30,277:INFO:Importing untrained model
+2024-05-31 18:13:30,277:INFO:Lasso Least Angle Regression Imported successfully
+2024-05-31 18:13:30,277:INFO:Starting cross validation
+2024-05-31 18:13:30,278:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:30,559:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\linear_model\_least_angle.py:718: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 94 iterations, alpha=1.211e+01, previous alpha=1.209e+01, with an active set of 89 regressors.
+  warnings.warn(
+
+2024-05-31 18:13:30,585:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\linear_model\_least_angle.py:718: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 89 iterations, alpha=1.293e+01, previous alpha=1.293e+01, with an active set of 82 regressors.
+  warnings.warn(
+
+2024-05-31 18:13:30,623:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\linear_model\_least_angle.py:775: RuntimeWarning: overflow encountered in divide
+  g2 = arrayfuncs.min_pos((C + Cov) / (AA + corr_eq_dir + tiny32))
+
+2024-05-31 18:13:30,876:INFO:Calculating mean and std
+2024-05-31 18:13:30,876:INFO:Creating metrics dataframe
+2024-05-31 18:13:30,878:INFO:Uploading results into container
+2024-05-31 18:13:30,878:INFO:Uploading model into container now
+2024-05-31 18:13:30,878:INFO:_master_model_container: 6
+2024-05-31 18:13:30,878:INFO:_display_container: 2
+2024-05-31 18:13:30,879:INFO:LassoLars(random_state=6633)
+2024-05-31 18:13:30,879:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:30,955:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:30,955:INFO:Creating metrics dataframe
+2024-05-31 18:13:30,957:INFO:Initializing Orthogonal Matching Pursuit
+2024-05-31 18:13:30,958:INFO:Total runtime is 0.1966426849365234 minutes
+2024-05-31 18:13:30,958:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:30,958:INFO:Initializing create_model()
+2024-05-31 18:13:30,958:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:30,958:INFO:Checking exceptions
+2024-05-31 18:13:30,958:INFO:Importing libraries
+2024-05-31 18:13:30,958:INFO:Copying training dataset
+2024-05-31 18:13:30,992:INFO:Defining folds
+2024-05-31 18:13:30,992:INFO:Declaring metric variables
+2024-05-31 18:13:30,992:INFO:Importing untrained model
+2024-05-31 18:13:30,993:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-05-31 18:13:30,993:INFO:Starting cross validation
+2024-05-31 18:13:30,994:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:31,451:INFO:Calculating mean and std
+2024-05-31 18:13:31,452:INFO:Creating metrics dataframe
+2024-05-31 18:13:31,453:INFO:Uploading results into container
+2024-05-31 18:13:31,454:INFO:Uploading model into container now
+2024-05-31 18:13:31,454:INFO:_master_model_container: 7
+2024-05-31 18:13:31,454:INFO:_display_container: 2
+2024-05-31 18:13:31,454:INFO:OrthogonalMatchingPursuit()
+2024-05-31 18:13:31,454:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:31,531:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:31,532:INFO:Creating metrics dataframe
+2024-05-31 18:13:31,534:INFO:Initializing Bayesian Ridge
+2024-05-31 18:13:31,534:INFO:Total runtime is 0.20622826019922888 minutes
+2024-05-31 18:13:31,534:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:31,534:INFO:Initializing create_model()
+2024-05-31 18:13:31,534:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:31,534:INFO:Checking exceptions
+2024-05-31 18:13:31,534:INFO:Importing libraries
+2024-05-31 18:13:31,534:INFO:Copying training dataset
+2024-05-31 18:13:31,566:INFO:Defining folds
+2024-05-31 18:13:31,566:INFO:Declaring metric variables
+2024-05-31 18:13:31,567:INFO:Importing untrained model
+2024-05-31 18:13:31,567:INFO:Bayesian Ridge Imported successfully
+2024-05-31 18:13:31,567:INFO:Starting cross validation
+2024-05-31 18:13:31,568:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:33,329:INFO:Calculating mean and std
+2024-05-31 18:13:33,330:INFO:Creating metrics dataframe
+2024-05-31 18:13:33,331:INFO:Uploading results into container
+2024-05-31 18:13:33,332:INFO:Uploading model into container now
+2024-05-31 18:13:33,332:INFO:_master_model_container: 8
+2024-05-31 18:13:33,332:INFO:_display_container: 2
+2024-05-31 18:13:33,332:INFO:BayesianRidge()
+2024-05-31 18:13:33,332:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:33,409:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:33,409:INFO:Creating metrics dataframe
+2024-05-31 18:13:33,411:INFO:Initializing Passive Aggressive Regressor
+2024-05-31 18:13:33,411:INFO:Total runtime is 0.23751672108968094 minutes
+2024-05-31 18:13:33,411:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:33,411:INFO:Initializing create_model()
+2024-05-31 18:13:33,411:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:33,411:INFO:Checking exceptions
+2024-05-31 18:13:33,411:INFO:Importing libraries
+2024-05-31 18:13:33,411:INFO:Copying training dataset
+2024-05-31 18:13:33,445:INFO:Defining folds
+2024-05-31 18:13:33,445:INFO:Declaring metric variables
+2024-05-31 18:13:33,445:INFO:Importing untrained model
+2024-05-31 18:13:33,445:INFO:Passive Aggressive Regressor Imported successfully
+2024-05-31 18:13:33,446:INFO:Starting cross validation
+2024-05-31 18:13:33,446:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:34,026:INFO:Calculating mean and std
+2024-05-31 18:13:34,027:INFO:Creating metrics dataframe
+2024-05-31 18:13:34,028:INFO:Uploading results into container
+2024-05-31 18:13:34,028:INFO:Uploading model into container now
+2024-05-31 18:13:34,029:INFO:_master_model_container: 9
+2024-05-31 18:13:34,029:INFO:_display_container: 2
+2024-05-31 18:13:34,029:INFO:PassiveAggressiveRegressor(random_state=6633)
+2024-05-31 18:13:34,029:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:34,105:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:34,105:INFO:Creating metrics dataframe
+2024-05-31 18:13:34,108:INFO:Initializing Huber Regressor
+2024-05-31 18:13:34,108:INFO:Total runtime is 0.24913736979166662 minutes
+2024-05-31 18:13:34,108:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:34,108:INFO:Initializing create_model()
+2024-05-31 18:13:34,108:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:34,108:INFO:Checking exceptions
+2024-05-31 18:13:34,108:INFO:Importing libraries
+2024-05-31 18:13:34,108:INFO:Copying training dataset
+2024-05-31 18:13:34,143:INFO:Defining folds
+2024-05-31 18:13:34,143:INFO:Declaring metric variables
+2024-05-31 18:13:34,143:INFO:Importing untrained model
+2024-05-31 18:13:34,143:INFO:Huber Regressor Imported successfully
+2024-05-31 18:13:34,143:INFO:Starting cross validation
+2024-05-31 18:13:34,144:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:37,469:INFO:Calculating mean and std
+2024-05-31 18:13:37,470:INFO:Creating metrics dataframe
+2024-05-31 18:13:37,471:INFO:Uploading results into container
+2024-05-31 18:13:37,472:INFO:Uploading model into container now
+2024-05-31 18:13:37,472:INFO:_master_model_container: 10
+2024-05-31 18:13:37,472:INFO:_display_container: 2
+2024-05-31 18:13:37,472:INFO:HuberRegressor()
+2024-05-31 18:13:37,472:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:37,547:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:37,547:INFO:Creating metrics dataframe
+2024-05-31 18:13:37,549:INFO:Initializing K Neighbors Regressor
+2024-05-31 18:13:37,549:INFO:Total runtime is 0.3064919829368591 minutes
+2024-05-31 18:13:37,550:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:37,550:INFO:Initializing create_model()
+2024-05-31 18:13:37,550:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:37,550:INFO:Checking exceptions
+2024-05-31 18:13:37,550:INFO:Importing libraries
+2024-05-31 18:13:37,550:INFO:Copying training dataset
+2024-05-31 18:13:37,585:INFO:Defining folds
+2024-05-31 18:13:37,585:INFO:Declaring metric variables
+2024-05-31 18:13:37,585:INFO:Importing untrained model
+2024-05-31 18:13:37,586:INFO:K Neighbors Regressor Imported successfully
+2024-05-31 18:13:37,586:INFO:Starting cross validation
+2024-05-31 18:13:37,587:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:39,069:INFO:Calculating mean and std
+2024-05-31 18:13:39,069:INFO:Creating metrics dataframe
+2024-05-31 18:13:39,071:INFO:Uploading results into container
+2024-05-31 18:13:39,071:INFO:Uploading model into container now
+2024-05-31 18:13:39,071:INFO:_master_model_container: 11
+2024-05-31 18:13:39,072:INFO:_display_container: 2
+2024-05-31 18:13:39,072:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-05-31 18:13:39,072:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:39,148:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:39,148:INFO:Creating metrics dataframe
+2024-05-31 18:13:39,150:INFO:Initializing Decision Tree Regressor
+2024-05-31 18:13:39,150:INFO:Total runtime is 0.3331736087799072 minutes
+2024-05-31 18:13:39,150:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:39,150:INFO:Initializing create_model()
+2024-05-31 18:13:39,150:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:39,150:INFO:Checking exceptions
+2024-05-31 18:13:39,150:INFO:Importing libraries
+2024-05-31 18:13:39,150:INFO:Copying training dataset
+2024-05-31 18:13:39,184:INFO:Defining folds
+2024-05-31 18:13:39,184:INFO:Declaring metric variables
+2024-05-31 18:13:39,184:INFO:Importing untrained model
+2024-05-31 18:13:39,185:INFO:Decision Tree Regressor Imported successfully
+2024-05-31 18:13:39,185:INFO:Starting cross validation
+2024-05-31 18:13:39,186:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:13:40,423:INFO:Calculating mean and std
+2024-05-31 18:13:40,423:INFO:Creating metrics dataframe
+2024-05-31 18:13:40,425:INFO:Uploading results into container
+2024-05-31 18:13:40,425:INFO:Uploading model into container now
+2024-05-31 18:13:40,425:INFO:_master_model_container: 12
+2024-05-31 18:13:40,425:INFO:_display_container: 2
+2024-05-31 18:13:40,426:INFO:DecisionTreeRegressor(random_state=6633)
+2024-05-31 18:13:40,426:INFO:create_model() successfully completed......................................
+2024-05-31 18:13:40,501:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:13:40,501:INFO:Creating metrics dataframe
+2024-05-31 18:13:40,504:INFO:Initializing Random Forest Regressor
+2024-05-31 18:13:40,504:INFO:Total runtime is 0.35574108759562173 minutes
+2024-05-31 18:13:40,504:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:13:40,504:INFO:Initializing create_model()
+2024-05-31 18:13:40,504:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:13:40,504:INFO:Checking exceptions
+2024-05-31 18:13:40,504:INFO:Importing libraries
+2024-05-31 18:13:40,504:INFO:Copying training dataset
+2024-05-31 18:13:40,538:INFO:Defining folds
+2024-05-31 18:13:40,538:INFO:Declaring metric variables
+2024-05-31 18:13:40,538:INFO:Importing untrained model
+2024-05-31 18:13:40,538:INFO:Random Forest Regressor Imported successfully
+2024-05-31 18:13:40,538:INFO:Starting cross validation
+2024-05-31 18:13:40,539:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:14:26,350:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:26,413:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:26,517:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:26,973:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:29,109:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:38,564:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:39,128:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:39,436:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:39,531:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:39,948:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:14:40,387:INFO:Calculating mean and std
+2024-05-31 18:14:40,388:INFO:Creating metrics dataframe
+2024-05-31 18:14:40,390:INFO:Uploading results into container
+2024-05-31 18:14:40,391:INFO:Uploading model into container now
+2024-05-31 18:14:40,391:INFO:_master_model_container: 13
+2024-05-31 18:14:40,391:INFO:_display_container: 2
+2024-05-31 18:14:40,392:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 18:14:40,392:INFO:create_model() successfully completed......................................
+2024-05-31 18:14:40,519:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:14:40,519:INFO:Creating metrics dataframe
+2024-05-31 18:14:40,524:INFO:Initializing Extra Trees Regressor
+2024-05-31 18:14:40,524:INFO:Total runtime is 1.3560614705085754 minutes
+2024-05-31 18:14:40,525:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:14:40,525:INFO:Initializing create_model()
+2024-05-31 18:14:40,525:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:14:40,525:INFO:Checking exceptions
+2024-05-31 18:14:40,525:INFO:Importing libraries
+2024-05-31 18:14:40,525:INFO:Copying training dataset
+2024-05-31 18:14:40,572:INFO:Defining folds
+2024-05-31 18:14:40,572:INFO:Declaring metric variables
+2024-05-31 18:14:40,573:INFO:Importing untrained model
+2024-05-31 18:14:40,573:INFO:Extra Trees Regressor Imported successfully
+2024-05-31 18:14:40,573:INFO:Starting cross validation
+2024-05-31 18:14:40,574:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:15:36,420:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:15:38,198:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:15:38,434:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:15:53,034:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:15:56,540:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:10,327:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:10,561:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:10,641:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:10,855:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:11,078:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but ExtraTreesRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:16:11,599:INFO:Calculating mean and std
+2024-05-31 18:16:11,600:INFO:Creating metrics dataframe
+2024-05-31 18:16:11,602:INFO:Uploading results into container
+2024-05-31 18:16:11,602:INFO:Uploading model into container now
+2024-05-31 18:16:11,603:INFO:_master_model_container: 14
+2024-05-31 18:16:11,603:INFO:_display_container: 2
+2024-05-31 18:16:11,603:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 18:16:11,603:INFO:create_model() successfully completed......................................
+2024-05-31 18:16:11,736:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:16:11,737:INFO:Creating metrics dataframe
+2024-05-31 18:16:11,740:INFO:Initializing AdaBoost Regressor
+2024-05-31 18:16:11,740:INFO:Total runtime is 2.876336658000946 minutes
+2024-05-31 18:16:11,740:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:16:11,740:INFO:Initializing create_model()
+2024-05-31 18:16:11,740:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:16:11,740:INFO:Checking exceptions
+2024-05-31 18:16:11,740:INFO:Importing libraries
+2024-05-31 18:16:11,740:INFO:Copying training dataset
+2024-05-31 18:16:11,776:INFO:Defining folds
+2024-05-31 18:16:11,777:INFO:Declaring metric variables
+2024-05-31 18:16:11,777:INFO:Importing untrained model
+2024-05-31 18:16:11,777:INFO:AdaBoost Regressor Imported successfully
+2024-05-31 18:16:11,777:INFO:Starting cross validation
+2024-05-31 18:16:11,779:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:16:22,540:INFO:Calculating mean and std
+2024-05-31 18:16:22,541:INFO:Creating metrics dataframe
+2024-05-31 18:16:22,544:INFO:Uploading results into container
+2024-05-31 18:16:22,544:INFO:Uploading model into container now
+2024-05-31 18:16:22,545:INFO:_master_model_container: 15
+2024-05-31 18:16:22,545:INFO:_display_container: 2
+2024-05-31 18:16:22,545:INFO:AdaBoostRegressor(random_state=6633)
+2024-05-31 18:16:22,545:INFO:create_model() successfully completed......................................
+2024-05-31 18:16:22,623:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:16:22,623:INFO:Creating metrics dataframe
+2024-05-31 18:16:22,626:INFO:Initializing Gradient Boosting Regressor
+2024-05-31 18:16:22,626:INFO:Total runtime is 3.0577674786249798 minutes
+2024-05-31 18:16:22,626:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:16:22,626:INFO:Initializing create_model()
+2024-05-31 18:16:22,626:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:16:22,626:INFO:Checking exceptions
+2024-05-31 18:16:22,626:INFO:Importing libraries
+2024-05-31 18:16:22,626:INFO:Copying training dataset
+2024-05-31 18:16:22,659:INFO:Defining folds
+2024-05-31 18:16:22,659:INFO:Declaring metric variables
+2024-05-31 18:16:22,659:INFO:Importing untrained model
+2024-05-31 18:16:22,659:INFO:Gradient Boosting Regressor Imported successfully
+2024-05-31 18:16:22,659:INFO:Starting cross validation
+2024-05-31 18:16:22,661:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:16:33,101:INFO:Calculating mean and std
+2024-05-31 18:16:33,102:INFO:Creating metrics dataframe
+2024-05-31 18:16:33,104:INFO:Uploading results into container
+2024-05-31 18:16:33,104:INFO:Uploading model into container now
+2024-05-31 18:16:33,105:INFO:_master_model_container: 16
+2024-05-31 18:16:33,105:INFO:_display_container: 2
+2024-05-31 18:16:33,105:INFO:GradientBoostingRegressor(random_state=6633)
+2024-05-31 18:16:33,105:INFO:create_model() successfully completed......................................
+2024-05-31 18:16:33,183:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:16:33,183:INFO:Creating metrics dataframe
+2024-05-31 18:16:33,185:INFO:Initializing Light Gradient Boosting Machine
+2024-05-31 18:16:33,185:INFO:Total runtime is 3.2337494134902953 minutes
+2024-05-31 18:16:33,186:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:16:33,186:INFO:Initializing create_model()
+2024-05-31 18:16:33,186:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:16:33,186:INFO:Checking exceptions
+2024-05-31 18:16:33,186:INFO:Importing libraries
+2024-05-31 18:16:33,186:INFO:Copying training dataset
+2024-05-31 18:16:33,220:INFO:Defining folds
+2024-05-31 18:16:33,220:INFO:Declaring metric variables
+2024-05-31 18:16:33,220:INFO:Importing untrained model
+2024-05-31 18:16:33,221:INFO:Light Gradient Boosting Machine Imported successfully
+2024-05-31 18:16:33,221:INFO:Starting cross validation
+2024-05-31 18:16:33,221:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:16:35,299:INFO:Calculating mean and std
+2024-05-31 18:16:35,301:INFO:Creating metrics dataframe
+2024-05-31 18:16:35,303:INFO:Uploading results into container
+2024-05-31 18:16:35,303:INFO:Uploading model into container now
+2024-05-31 18:16:35,304:INFO:_master_model_container: 17
+2024-05-31 18:16:35,304:INFO:_display_container: 2
+2024-05-31 18:16:35,304:INFO:LGBMRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 18:16:35,304:INFO:create_model() successfully completed......................................
+2024-05-31 18:16:35,390:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:16:35,390:INFO:Creating metrics dataframe
+2024-05-31 18:16:35,395:INFO:Initializing CatBoost Regressor
+2024-05-31 18:16:35,395:INFO:Total runtime is 3.2705819845199584 minutes
+2024-05-31 18:16:35,395:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:16:35,395:INFO:Initializing create_model()
+2024-05-31 18:16:35,395:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:16:35,396:INFO:Checking exceptions
+2024-05-31 18:16:35,396:INFO:Importing libraries
+2024-05-31 18:16:35,396:INFO:Copying training dataset
+2024-05-31 18:16:35,440:INFO:Defining folds
+2024-05-31 18:16:35,440:INFO:Declaring metric variables
+2024-05-31 18:16:35,441:INFO:Importing untrained model
+2024-05-31 18:16:35,450:INFO:CatBoost Regressor Imported successfully
+2024-05-31 18:16:35,451:INFO:Starting cross validation
+2024-05-31 18:16:35,453:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:17:00,894:INFO:Calculating mean and std
+2024-05-31 18:17:00,895:INFO:Creating metrics dataframe
+2024-05-31 18:17:00,897:INFO:Uploading results into container
+2024-05-31 18:17:00,897:INFO:Uploading model into container now
+2024-05-31 18:17:00,897:INFO:_master_model_container: 18
+2024-05-31 18:17:00,897:INFO:_display_container: 2
+2024-05-31 18:17:00,897:INFO:<catboost.core.CatBoostRegressor object at 0x0000021908F50040>
+2024-05-31 18:17:00,898:INFO:create_model() successfully completed......................................
+2024-05-31 18:17:00,982:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:17:00,983:INFO:Creating metrics dataframe
+2024-05-31 18:17:00,986:INFO:Initializing Dummy Regressor
+2024-05-31 18:17:00,986:INFO:Total runtime is 3.697096331914266 minutes
+2024-05-31 18:17:00,986:INFO:SubProcess create_model() called ==================================
+2024-05-31 18:17:00,986:INFO:Initializing create_model()
+2024-05-31 18:17:00,986:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000021908C80DF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:17:00,986:INFO:Checking exceptions
+2024-05-31 18:17:00,986:INFO:Importing libraries
+2024-05-31 18:17:00,986:INFO:Copying training dataset
+2024-05-31 18:17:01,023:INFO:Defining folds
+2024-05-31 18:17:01,024:INFO:Declaring metric variables
+2024-05-31 18:17:01,024:INFO:Importing untrained model
+2024-05-31 18:17:01,024:INFO:Dummy Regressor Imported successfully
+2024-05-31 18:17:01,024:INFO:Starting cross validation
+2024-05-31 18:17:01,025:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:17:01,440:INFO:Calculating mean and std
+2024-05-31 18:17:01,441:INFO:Creating metrics dataframe
+2024-05-31 18:17:01,443:INFO:Uploading results into container
+2024-05-31 18:17:01,443:INFO:Uploading model into container now
+2024-05-31 18:17:01,443:INFO:_master_model_container: 19
+2024-05-31 18:17:01,443:INFO:_display_container: 2
+2024-05-31 18:17:01,443:INFO:DummyRegressor()
+2024-05-31 18:17:01,443:INFO:create_model() successfully completed......................................
+2024-05-31 18:17:01,521:INFO:SubProcess create_model() end ==================================
+2024-05-31 18:17:01,522:INFO:Creating metrics dataframe
+2024-05-31 18:17:01,531:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2024-05-31 18:17:01,533:INFO:Initializing create_model()
+2024-05-31 18:17:01,533:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=<catboost.core.CatBoostRegressor object at 0x0000021908F50040>, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:17:01,533:INFO:Checking exceptions
+2024-05-31 18:17:01,534:INFO:Importing libraries
+2024-05-31 18:17:01,534:INFO:Copying training dataset
+2024-05-31 18:17:01,567:INFO:Defining folds
+2024-05-31 18:17:01,567:INFO:Declaring metric variables
+2024-05-31 18:17:01,567:INFO:Importing untrained model
+2024-05-31 18:17:01,567:INFO:Declaring custom model
+2024-05-31 18:17:01,567:INFO:CatBoost Regressor Imported successfully
+2024-05-31 18:17:01,568:INFO:Cross validation set to False
+2024-05-31 18:17:01,568:INFO:Fitting Model
+2024-05-31 18:17:07,162:INFO:<catboost.core.CatBoostRegressor object at 0x0000021908F51C30>
+2024-05-31 18:17:07,162:INFO:create_model() successfully completed......................................
+2024-05-31 18:17:07,275:INFO:_master_model_container: 19
+2024-05-31 18:17:07,275:INFO:_display_container: 2
+2024-05-31 18:17:07,275:INFO:<catboost.core.CatBoostRegressor object at 0x0000021908F51C30>
+2024-05-31 18:17:07,275:INFO:compare_models() successfully completed......................................
+2024-05-31 18:17:07,275:INFO:Initializing create_model()
+2024-05-31 18:17:07,275:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 18:17:07,275:INFO:Checking exceptions
+2024-05-31 18:17:07,278:INFO:Importing libraries
+2024-05-31 18:17:07,278:INFO:Copying training dataset
+2024-05-31 18:17:07,322:INFO:Defining folds
+2024-05-31 18:17:07,322:INFO:Declaring metric variables
+2024-05-31 18:17:07,323:INFO:Importing untrained model
+2024-05-31 18:17:07,323:INFO:Random Forest Regressor Imported successfully
+2024-05-31 18:17:07,323:INFO:Starting cross validation
+2024-05-31 18:17:07,324:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 18:17:47,001:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:17:47,310:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:03,658:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:25,389:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:25,753:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:25,845:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:25,948:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:26,296:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:26,536:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:28,132:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:28,474:INFO:Calculating mean and std
+2024-05-31 18:18:28,475:INFO:Creating metrics dataframe
+2024-05-31 18:18:28,478:INFO:Finalizing model
+2024-05-31 18:18:31,889:INFO:Uploading results into container
+2024-05-31 18:18:31,889:INFO:Uploading model into container now
+2024-05-31 18:18:31,899:INFO:_master_model_container: 20
+2024-05-31 18:18:31,899:INFO:_display_container: 3
+2024-05-31 18:18:31,900:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 18:18:31,900:INFO:create_model() successfully completed......................................
+2024-05-31 18:18:31,989:INFO:Initializing tune_model()
+2024-05-31 18:18:31,989:INFO:tune_model(estimator=RandomForestRegressor(n_jobs=-1, random_state=6633), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>)
+2024-05-31 18:18:31,989:INFO:Checking exceptions
+2024-05-31 18:18:32,003:INFO:Copying training dataset
+2024-05-31 18:18:32,025:INFO:Checking base model
+2024-05-31 18:18:32,026:INFO:Base model : Random Forest Regressor
+2024-05-31 18:18:32,026:INFO:Declaring metric variables
+2024-05-31 18:18:32,026:INFO:Defining Hyperparameters
+2024-05-31 18:18:32,101:INFO:Tuning with n_jobs=-1
+2024-05-31 18:18:32,102:INFO:Initializing RandomizedSearchCV
+2024-05-31 18:18:32,551:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,566:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,593:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,597:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,599:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,610:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,653:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,721:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:32,751:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:35,774:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:35,962:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:35,994:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,721:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,755:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,800:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,818:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,837:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:37,853:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:38,132:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,013:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,164:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,233:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,319:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,410:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,575:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,633:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:40,854:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:41,907:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:41,965:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:42,808:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:43,243:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:43,306:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:43,360:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:44,117:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:44,609:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:45,477:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:45,741:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:46,054:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:18:46,873:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:32,481:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:33,737:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:44,052:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:45,826:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:46,641:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:52,913:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:54,501:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:56,087:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:21:58,808:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:34:14,908:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:56:52,316:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:57:12,203:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:57:28,891:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:57:41,425:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:57:47,726:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:58:05,908:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:58:12,936:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:58:19,784:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:58:44,323:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 18:58:44,852:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:28:49,381:INFO:best_params: {'actual_estimator__n_estimators': 120, 'actual_estimator__min_samples_split': 2, 'actual_estimator__min_samples_leaf': 2, 'actual_estimator__min_impurity_decrease': 0.5, 'actual_estimator__max_features': 1.0, 'actual_estimator__max_depth': 8, 'actual_estimator__criterion': 'squared_error', 'actual_estimator__bootstrap': False}
+2024-05-31 23:28:49,381:INFO:Hyperparameter search completed
+2024-05-31 23:28:49,381:INFO:SubProcess create_model() called ==================================
+2024-05-31 23:28:49,382:INFO:Initializing create_model()
+2024-05-31 23:28:49,382:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=RandomForestRegressor(n_jobs=-1, random_state=6633), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000219043C79A0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'n_estimators': 120, 'min_samples_split': 2, 'min_samples_leaf': 2, 'min_impurity_decrease': 0.5, 'max_features': 1.0, 'max_depth': 8, 'criterion': 'squared_error', 'bootstrap': False})
+2024-05-31 23:28:49,382:INFO:Checking exceptions
+2024-05-31 23:28:49,382:INFO:Importing libraries
+2024-05-31 23:28:49,382:INFO:Copying training dataset
+2024-05-31 23:28:49,422:INFO:Defining folds
+2024-05-31 23:28:49,423:INFO:Declaring metric variables
+2024-05-31 23:28:49,423:INFO:Importing untrained model
+2024-05-31 23:28:49,423:INFO:Declaring custom model
+2024-05-31 23:28:49,424:INFO:Random Forest Regressor Imported successfully
+2024-05-31 23:28:49,424:INFO:Starting cross validation
+2024-05-31 23:28:49,425:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 23:29:01,138:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:01,527:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:01,859:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:04,853:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:09,445:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:10,910:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:11,013:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:11,172:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:11,435:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:11,538:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:11,681:INFO:Calculating mean and std
+2024-05-31 23:29:11,682:INFO:Creating metrics dataframe
+2024-05-31 23:29:11,683:INFO:Finalizing model
+2024-05-31 23:29:12,560:INFO:Uploading results into container
+2024-05-31 23:29:12,561:INFO:Uploading model into container now
+2024-05-31 23:29:12,561:INFO:_master_model_container: 21
+2024-05-31 23:29:12,561:INFO:_display_container: 4
+2024-05-31 23:29:12,562:INFO:RandomForestRegressor(bootstrap=False, max_depth=8, min_impurity_decrease=0.5,
+                      min_samples_leaf=2, n_estimators=120, n_jobs=-1,
+                      random_state=6633)
+2024-05-31 23:29:12,562:INFO:create_model() successfully completed......................................
+2024-05-31 23:29:12,647:INFO:SubProcess create_model() end ==================================
+2024-05-31 23:29:12,647:INFO:choose_better activated
+2024-05-31 23:29:12,647:INFO:SubProcess create_model() called ==================================
+2024-05-31 23:29:12,648:INFO:Initializing create_model()
+2024-05-31 23:29:12,648:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=RandomForestRegressor(n_jobs=-1, random_state=6633), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 23:29:12,648:INFO:Checking exceptions
+2024-05-31 23:29:12,649:INFO:Importing libraries
+2024-05-31 23:29:12,649:INFO:Copying training dataset
+2024-05-31 23:29:12,684:INFO:Defining folds
+2024-05-31 23:29:12,684:INFO:Declaring metric variables
+2024-05-31 23:29:12,684:INFO:Importing untrained model
+2024-05-31 23:29:12,684:INFO:Declaring custom model
+2024-05-31 23:29:12,685:INFO:Random Forest Regressor Imported successfully
+2024-05-31 23:29:12,685:INFO:Starting cross validation
+2024-05-31 23:29:12,686:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-31 23:29:54,575:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:57,514:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:29:59,118:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:13,110:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:18,037:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:22,977:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:25,171:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:25,179:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:25,364:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:25,823:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:26,193:INFO:Calculating mean and std
+2024-05-31 23:30:26,194:INFO:Creating metrics dataframe
+2024-05-31 23:30:26,196:INFO:Finalizing model
+2024-05-31 23:30:29,583:INFO:Uploading results into container
+2024-05-31 23:30:29,583:INFO:Uploading model into container now
+2024-05-31 23:30:29,584:INFO:_master_model_container: 22
+2024-05-31 23:30:29,584:INFO:_display_container: 5
+2024-05-31 23:30:29,584:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 23:30:29,584:INFO:create_model() successfully completed......................................
+2024-05-31 23:30:29,660:INFO:SubProcess create_model() end ==================================
+2024-05-31 23:30:29,660:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633) result for R2 is 0.9355
+2024-05-31 23:30:29,661:INFO:RandomForestRegressor(bootstrap=False, max_depth=8, min_impurity_decrease=0.5,
+                      min_samples_leaf=2, n_estimators=120, n_jobs=-1,
+                      random_state=6633) result for R2 is 0.8498
+2024-05-31 23:30:29,661:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633) is best model
+2024-05-31 23:30:29,661:INFO:choose_better completed
+2024-05-31 23:30:29,662:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2024-05-31 23:30:29,671:INFO:_master_model_container: 22
+2024-05-31 23:30:29,671:INFO:_display_container: 4
+2024-05-31 23:30:29,672:INFO:RandomForestRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 23:30:29,672:INFO:tune_model() successfully completed......................................
+2024-05-31 23:30:29,759:INFO:Initializing finalize_model()
+2024-05-31 23:30:29,759:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=RandomForestRegressor(n_jobs=-1, random_state=6633), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-05-31 23:30:29,759:INFO:Finalizing RandomForestRegressor(n_jobs=-1, random_state=6633)
+2024-05-31 23:30:29,781:INFO:Initializing create_model()
+2024-05-31 23:30:29,781:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=RandomForestRegressor(n_jobs=-1, random_state=6633), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-31 23:30:29,781:INFO:Checking exceptions
+2024-05-31 23:30:29,782:INFO:Importing libraries
+2024-05-31 23:30:29,782:INFO:Copying training dataset
+2024-05-31 23:30:29,786:INFO:Defining folds
+2024-05-31 23:30:29,786:INFO:Declaring metric variables
+2024-05-31 23:30:29,786:INFO:Importing untrained model
+2024-05-31 23:30:29,787:INFO:Declaring custom model
+2024-05-31 23:30:29,787:INFO:Random Forest Regressor Imported successfully
+2024-05-31 23:30:29,789:INFO:Cross validation set to False
+2024-05-31 23:30:29,789:INFO:Fitting Model
+2024-05-31 23:30:35,149:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6633))])
+2024-05-31 23:30:35,149:INFO:create_model() successfully completed......................................
+2024-05-31 23:30:35,236:INFO:_master_model_container: 22
+2024-05-31 23:30:35,237:INFO:_display_container: 4
+2024-05-31 23:30:35,242:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6633))])
+2024-05-31 23:30:35,242:INFO:finalize_model() successfully completed......................................
+2024-05-31 23:30:35,336:INFO:Initializing predict_model()
+2024-05-31 23:30:35,336:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002190B21A110>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6633))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000219105AA3B0>)
+2024-05-31 23:30:35,337:INFO:Checking exceptions
+2024-05-31 23:30:35,337:INFO:Preloading libraries
+2024-05-31 23:30:35,337:INFO:Set up data.
+2024-05-31 23:30:35,418:INFO:Set up index.
+2024-05-31 23:30:35,519:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+
+2024-05-31 23:30:35,853:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-05-31 23:30:35,981:INFO:Initializing save_model()
+2024-05-31 23:30:35,982:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6633))]), model_name=./data/train/automl_model_cars_price_prediction.pkl, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\CESAR_~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model...
+                                             'model_hashed_18',
+                                             'model_hashed_19',
+                                             'model_hashed_20',
+                                             'model_hashed_21',
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2024-05-31 23:30:35,982:INFO:Adding model into prep_pipe
+2024-05-31 23:30:35,982:WARNING:Only Model saved as it was a pipeline.
+2024-05-31 23:30:36,669:INFO:./data/train/automl_model_cars_price_prediction.pkl.pkl saved in current working directory
+2024-05-31 23:30:36,676:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6633))])
+2024-05-31 23:30:36,676:INFO:save_model() successfully completed......................................

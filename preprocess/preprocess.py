@@ -469,6 +469,9 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Remove the outlier column
     X_train.drop(columns='outlier', inplace=True)
     X_test.drop(columns='outlier', inplace=True)
+    # Filter targets
+    y_train = y_train.loc[X_train.index]
+    y_test = y_test.loc[X_test.index]
 
     print(f"Cars train dataset size after preprocess: {X_train.shape}")
     print(f"Cars test dataset size after preprocess: {X_test.shape}")
