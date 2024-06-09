@@ -48,11 +48,11 @@ def train(X, y):
     print("results:",results_json)
 
     # Save model
-    model_filepath = r'./data/train/automl_model_cars_price_prediction.pkl'
+    model_filepath = r'./data/train/automl_model_cars_price_prediction'
     save_model(final_model, model_filepath)
 
     # Save results
-    train_filepath = r'./data/train/cat_boost_cars_price_validation_prediction.csv'
+    train_filepath = r'./data/train/automl_cars_price_validation_prediction.csv'
     predictions_df.to_csv(train_filepath, index=False)
 
     print("Training AutoML Regressor Completed")

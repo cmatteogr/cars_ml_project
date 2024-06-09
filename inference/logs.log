@@ -1,0 +1,76 @@
+2024-06-05 10:41:35,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:35,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:35,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:35,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:47,268:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:47,275:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:47,275:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:47,275:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:57,765:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:57,766:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:57,766:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:41:57,766:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:21,642:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:21,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:21,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:21,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:22,988:INFO:Initializing load_model()
+2024-06-05 10:42:22,994:INFO:load_model(model_name=../data/train/automl_model_cars_price_prediction.pkl, platform=None, authentication=None, verbose=True)
+2024-06-05 10:42:35,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:35,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:35,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:35,554:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-05 10:42:36,896:INFO:Initializing load_model()
+2024-06-05 10:42:36,901:INFO:load_model(model_name=../data/train/automl_model_cars_price_prediction, platform=None, authentication=None, verbose=True)
+2024-06-05 10:42:37,385:INFO:Initializing predict_model()
+2024-06-05 10:42:37,385:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002B76CEA7CD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['msrp', 'year', 'mileage',
+                                             'stock_type', 'model_hashed_0',
+                                             'model_hashed_1', 'model_hashed_2',
+                                             'model_hashed_3', 'model_hashed_4',
+                                             'model_hashed_5', 'model_hashed_6',
+                                             'model_hashed_7', 'model_hashed_8',
+                                             'model_hashed_9',
+                                             'model_hashed_10',
+                                             'model_hashed_11',
+                                             'model_hashed...
+                                             'model_hashed_22',
+                                             'model_hashed_23',
+                                             'model_hashed_24',
+                                             'model_hashed_25', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames())),
+                ('actual_estimator',
+                 RandomForestRegressor(n_jobs=-1, random_state=6936))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B76CE76680>)
+2024-06-05 10:42:37,385:INFO:Checking exceptions
+2024-06-05 10:42:37,385:INFO:Preloading libraries
+2024-06-05 10:42:37,385:INFO:Set up data.
+2024-06-05 10:42:37,408:INFO:Set up index.
+2024-06-05 10:42:37,497:WARNING:C:\Users\cesar_0qb0xal\Documents\GitHub\cars_ml_project\.venv\lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
+  warnings.warn(
+

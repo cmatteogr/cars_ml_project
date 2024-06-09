@@ -1,5 +1,6 @@
 # import project libraries
 from sklearnex import patch_sklearn
+
 patch_sklearn()
 
 import pandas as pd
@@ -9,7 +10,7 @@ from sklearn.feature_extraction import FeatureHasher
 from gensim.models import Word2Vec
 from gensim.utils import simple_preprocess
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.experimental import enable_iterative_imputer 
+from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.ensemble import RandomForestRegressor, IsolationForest
 from sklearn.model_selection import train_test_split
@@ -29,6 +30,7 @@ def map_msrp(msrp):
         return np.nan
     return msrp
 
+
 def clean_exterior_color(exterior_color):
     # Check if value is empty
     if pd.isna(exterior_color):
@@ -43,6 +45,7 @@ def clean_exterior_color(exterior_color):
     exterior_color = exterior_color.strip()
     # Return formated text
     return exterior_color
+
 
 def get_interior_color_phrase_vector(exterior_color_phrase, model):
     exterior_color_words = exterior_color_phrase.split()
@@ -75,6 +78,7 @@ def get_interior_color_phrase_vector(interior_color_phrase, model):
         return np.nan
     return sum(interior_color_word_vectors) / len(interior_color_word_vectors)
 
+
 def map_drivetrain(drivetrain):
     """
     Group the drive trian by categories
@@ -85,19 +89,22 @@ def map_drivetrain(drivetrain):
     """
     if pd.isna(drivetrain):
         return np.nan
-    
+    # Apply lower case and replace special characters
+    drivetrain = str(drivetrain).lower().replace('-', ' ')
+
     match drivetrain:
-        case 'All-wheel Drive' | 'Four-wheel Drive' | 'AWD' | '4WD' | '4x2' | 'Four Wheel Drive' | 'All-Wheel Drive with Locking and Limited-Slip Differential' | 'All-Wheel Drive' | '4MATIC':
+        case 'all wheel drive' | 'four wheel drive' | 'awd' | '4wd' | '4x2' | 'all wheel drive with locking and limited slip differential' | '4matic':
             return 'All-wheel Drive'
-        case 'Rear-wheel Drive' | 'RWD':
+        case 'rear wheel drive' | 'rwd':
             return 'Rear-wheel Drive'
-        case 'Front-wheel Drive' | 'FWD' | 'Front Wheel Drive':
+        case 'front wheel drive' | 'fwd' | 'front wheel drive':
             return 'Front-wheel Drive'
-        case 'Unknown':
+        case 'unknown':
             return np.nan
         case _:
             raise Exception(f"No expected drive train: {drivetrain}")
-        
+
+
 def clean_cat(cat):
     # Check if value is empty
     if pd.isna(cat):
@@ -110,6 +117,7 @@ def clean_cat(cat):
     cat = re.sub(r'\s+', ' ', cat)
     # Return formated text
     return cat
+
 
 # Calculate the vectors feature avegare
 def get_cat_phrase_vector(cat_phrase, model):
@@ -139,12 +147,12 @@ def map_fuel_type(fuel_type):
             return 'Electric'
         case 'Hybrid' | 'Plug-In Hybrid' | 'Plug-in Gas/Elec' | 'Gas/Electric Hyb' | 'Hybrid Fuel' | 'Bio Diesel' | 'Gasoline/Mild Electric Hybrid' | 'Natural Gas':
             return 'Hybrid'
-        case 'Flexible Fuel' | 'E85 Flex Fuel'  | 'Flexible':
+        case 'Flexible Fuel' | 'E85 Flex Fuel' | 'Flexible':
             return 'Flexible'
         case _:
             print(f"No expected drive train: {fuel_type}")
             return np.nan
-        
+
 
 def map_stock_type(stock_type):
     """
@@ -165,7 +173,9 @@ def map_stock_type(stock_type):
         case _:
             raise Exception(f"No expected stock type: {stock_type}")
 
-def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency_threshold=300, model_hash_batch_size=20,
+
+def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency_threshold=300,
+               model_hash_batch_size=20,
                exterior_color_vector_size=5, interior_color_vector_size=5, cat_vector_size=3, train_inputer=False,
                isolation_forest_contamination=0.1):
     """
@@ -191,20 +201,23 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Read CSV file
     print("Read data from data source")
     cars_df = pd.read_csv(cars_filepath)
+    # Assign index
+    cars_df.index = cars_df['listing_id']
 
     print("####### Clean data")
+    # Remove duplicates
+    print("Remove duplicates")
+    cars_df.drop_duplicates(subset='listing_id', inplace=True)
+    print(f"Dataframe shape after remove duplicates: {cars_df.shape}")
     # Filter relevant features
     print("Remove irrelevant features")
     cars_df = cars_df[RELEVANT_PREPROCESS_COLUMNS]
-    # Remove duplicates
-    print("Remove duplicates")
-    cars_df.drop_duplicates(inplace=True)
     # Remove NaN target
     print("Remove rows with empty target")
     cars_df = cars_df.loc[~cars_df['price'].isna()]
     # Remove cars with price under threshold
     print(f"Remove rows under target threshold: {price_threshold}")
-    cars_df = cars_df.loc[cars_df['price']>=price_threshold]
+    cars_df = cars_df.loc[cars_df['price'] >= price_threshold]
     # Remove NaN drivetrain
     print("Remove rows with empty drivetrain")
     cars_df = cars_df.loc[~cars_df['drivetrain'].isna()]
@@ -222,37 +235,42 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Filter the DataFrame to exclude rows with these categories
     cars_df = cars_df[cars_df['make'].isin(make_categories_to_remove)]
 
-    cars_df.reset_index(drop=True, inplace=True)
     print(f"Data set shape: {cars_df.shape}")
 
     # Split Train - Test dataset
-    y = cars_df.pop('price') # Target variable - price
+    y = cars_df.pop('price')  # Target variable - price
     X = cars_df  # Car Features 
 
-    print(f"Split Dataset train-test. train={1-test_size}, test={test_size}")
+    print(f"Split Dataset train-test. train={1 - test_size}, test={test_size}")
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
-    
+    y_train.index = X_train.index
+    y_test.index = X_test.index
+
     print("####### Transfom data")
     # ### Apply Features transformation
     # Apply msrp transformation
     print("Apply msrp transformation")
     X_train['msrp'] = X_train['msrp'].map(map_msrp)
     X_test['msrp'] = X_test['msrp'].map(map_msrp)
-    
+
     # Apply model transformation
     print("Apply model transformation")
     train_model_data = X_train['model'].apply(lambda x: {x: 1}).tolist()
     test_model_data = X_test['model'].apply(lambda x: {x: 1}).tolist()
     # Define the number of hash space
-    n_hash = int(len(X_train['model'].unique())/model_hash_batch_size) # This values is a hyperparameter
+    n_hash = int(len(X_train['model'].unique()) / model_hash_batch_size)  # This values is a hyperparameter
     # Initialize FeatureHasher
     hasher = FeatureHasher(n_features=n_hash, input_type='dict')
     # Apply FeatureHasher
     train_model_hashed = hasher.transform(train_model_data)
     test_model_hashed = hasher.transform(test_model_data)
     # Generate model hashed dataframe
-    train_model_hashed_df = pd.DataFrame(train_model_hashed.toarray(), columns=[f'model_hashed_{i}' for i in range(train_model_hashed.shape[1])], index=X_train.index)
-    test_model_hashed_df = pd.DataFrame(test_model_hashed.toarray(), columns=[f'model_hashed_{i}' for i in range(test_model_hashed.shape[1])], index=X_test.index)
+    train_model_hashed_df = pd.DataFrame(train_model_hashed.toarray(),
+                                         columns=[f'model_hashed_{i}' for i in range(train_model_hashed.shape[1])],
+                                         index=X_train.index)
+    test_model_hashed_df = pd.DataFrame(test_model_hashed.toarray(),
+                                        columns=[f'model_hashed_{i}' for i in range(test_model_hashed.shape[1])],
+                                        index=X_test.index)
     # Concatenate the dataframes
     X_train = pd.concat([X_train, train_model_hashed_df], axis=1)
     X_test = pd.concat([X_test, test_model_hashed_df], axis=1)
@@ -269,17 +287,28 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Tokenize colors sentences
     tokenized_exterior_color = [simple_preprocess(sentence) for sentence in X_train['exterior_color'].tolist()]
     # Train the Word2Vec model
-    exterior_color_model = Word2Vec(sentences=tokenized_exterior_color, vector_size=exterior_color_vector_size, window=5, min_count=1, workers=4)
-    # Calculate the vertor for each interior color
-    train_exterior_color_vectors_s = X_train['exterior_color'].apply(lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
-    test_exterior_color_vectors_s = X_test['exterior_color'].apply(lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
+    exterior_color_model = Word2Vec(sentences=tokenized_exterior_color, vector_size=exterior_color_vector_size,
+                                    window=5, min_count=1, workers=4)
+    # Calculate the vector for each interior color
+    train_exterior_color_vectors_s = X_train['exterior_color'].apply(
+        lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
+    test_exterior_color_vectors_s = X_test['exterior_color'].apply(
+        lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
     # Replace the nan values with an array of (0,0,0)
-    base_invalid_value = [0]*exterior_color_vector_size
-    train_exterior_color_vectors_s = train_exterior_color_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
-    test_exterior_color_vectors_s = test_exterior_color_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
+    base_invalid_value = [0] * exterior_color_vector_size
+    train_exterior_color_vectors_s = train_exterior_color_vectors_s.apply(
+        lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
+    test_exterior_color_vectors_s = test_exterior_color_vectors_s.apply(
+        lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
     # Generate the interior color df using the transformed feature vectors
-    train_exterior_color_df = pd.DataFrame(train_exterior_color_vectors_s.values.tolist(), columns=[f'exterior_color_x{i}' for i in range(len(train_exterior_color_vectors_s.iloc[0]))], index=X_train.index)
-    test_exterior_color_df = pd.DataFrame(test_exterior_color_vectors_s.values.tolist(), columns=[f'exterior_color_x{i}' for i in range(len(test_exterior_color_vectors_s.iloc[0]))], index=X_test.index)
+    train_exterior_color_df = pd.DataFrame(train_exterior_color_vectors_s.values.tolist(),
+                                           columns=[f'exterior_color_x{i}' for i in
+                                                    range(len(train_exterior_color_vectors_s.iloc[0]))],
+                                           index=X_train.index)
+    test_exterior_color_df = pd.DataFrame(test_exterior_color_vectors_s.values.tolist(),
+                                          columns=[f'exterior_color_x{i}' for i in
+                                                   range(len(test_exterior_color_vectors_s.iloc[0]))],
+                                          index=X_test.index)
     # Concatenate the dataframes
     X_train = pd.concat([X_train, train_exterior_color_df], axis=1)
     X_test = pd.concat([X_test, test_exterior_color_df], axis=1)
@@ -296,24 +325,35 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Tokenize colors sentences
     tokenized_interior_color = [simple_preprocess(sentence) for sentence in X_train['interior_color'].tolist()]
     # Train the Word2Vec model
-    interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size, window=5, min_count=1, workers=4)
+    interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size,
+                                    window=5, min_count=1, workers=4)
     # Calculate the vertor for each interior color
-    train_interior_color_vectors_s = X_train['interior_color'].apply(lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
-    test_interior_color_vectors_s = X_test['interior_color'].apply(lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
+    train_interior_color_vectors_s = X_train['interior_color'].apply(
+        lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
+    test_interior_color_vectors_s = X_test['interior_color'].apply(
+        lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
     # Replace the nan values with an array of (0,0,0)
-    base_invalid_value = [0]*interior_color_vector_size
-    train_interior_color_vectors_s = train_interior_color_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
-    test_interior_color_vectors_s = test_interior_color_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
+    base_invalid_value = [0] * interior_color_vector_size
+    train_interior_color_vectors_s = train_interior_color_vectors_s.apply(
+        lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
+    test_interior_color_vectors_s = test_interior_color_vectors_s.apply(
+        lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
     # Generate the interior color df using the transformed feature vectors
-    train_interior_color_df = pd.DataFrame(train_interior_color_vectors_s.values.tolist(), columns=[f'interior_color_x{i}' for i in range(len(train_interior_color_vectors_s.iloc[0]))], index=X_train.index)
-    test_interior_color_df = pd.DataFrame(test_interior_color_vectors_s.values.tolist(), columns=[f'interior_color_x{i}' for i in range(len(test_interior_color_vectors_s.iloc[0]))], index=X_test.index)
+    train_interior_color_df = pd.DataFrame(train_interior_color_vectors_s.values.tolist(),
+                                           columns=[f'interior_color_x{i}' for i in
+                                                    range(len(train_interior_color_vectors_s.iloc[0]))],
+                                           index=X_train.index)
+    test_interior_color_df = pd.DataFrame(test_interior_color_vectors_s.values.tolist(),
+                                          columns=[f'interior_color_x{i}' for i in
+                                                   range(len(test_interior_color_vectors_s.iloc[0]))],
+                                          index=X_test.index)
     # Concatenate the dataframes
     X_train = pd.concat([X_train, train_interior_color_df], axis=1)
     X_test = pd.concat([X_test, test_interior_color_df], axis=1)
     # Once used drop the interior_color feature
     X_train.drop(columns='interior_color', inplace=True)
     X_test.drop(columns='interior_color', inplace=True)
-    
+
     # Applt drive train transformation
     print("Apply drivetrain transformation")
     X_train['drivetrain'] = X_train['drivetrain'].map(map_drivetrain)
@@ -325,8 +365,12 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     train_drivetrain_encoded_data = ohe_drivetrain_model.transform(X_train[['drivetrain']])
     test_drivetrain_encoded_data = ohe_drivetrain_model.transform(X_test[['drivetrain']])
     # Convert the drivetrain encoded data into a DataFrame
-    train_drivetrain_encoded_df = pd.DataFrame(train_drivetrain_encoded_data, columns=drivetrain_encoder.get_feature_names_out(['drivetrain']), index=X_train.index)
-    test_drivetrain_encoded_df = pd.DataFrame(test_drivetrain_encoded_data, columns=drivetrain_encoder.get_feature_names_out(['drivetrain']), index=X_test.index)
+    train_drivetrain_encoded_df = pd.DataFrame(train_drivetrain_encoded_data,
+                                               columns=drivetrain_encoder.get_feature_names_out(['drivetrain']),
+                                               index=X_train.index)
+    test_drivetrain_encoded_df = pd.DataFrame(test_drivetrain_encoded_data,
+                                              columns=drivetrain_encoder.get_feature_names_out(['drivetrain']),
+                                              index=X_test.index)
     # Concatenate the original DataFrame with the drivetrain encoded DataFrame
     X_train = pd.concat([X_train, train_drivetrain_encoded_df], axis=1)
     X_test = pd.concat([X_test, test_drivetrain_encoded_df], axis=1)
@@ -344,16 +388,18 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     train_make_encoded_data = ohe_make_model.transform(X_train[['make']])
     test_make_encoded_data = ohe_make_model.transform(X_test[['make']])
     # Convert the drivetrain encoded data into a DataFrame
-    train_make_encoded_df = pd.DataFrame(train_make_encoded_data, columns=make_encoder.get_feature_names_out(['make']), index=X_train.index)
-    test_make_encoded_df = pd.DataFrame(test_make_encoded_data, columns=make_encoder.get_feature_names_out(['make']), index=X_test.index)
+    train_make_encoded_df = pd.DataFrame(train_make_encoded_data, columns=make_encoder.get_feature_names_out(['make']),
+                                         index=X_train.index)
+    test_make_encoded_df = pd.DataFrame(test_make_encoded_data, columns=make_encoder.get_feature_names_out(['make']),
+                                        index=X_test.index)
     # Concatenate the original DataFrame with the drivetrain encoded DataFrame
     X_train = pd.concat([X_train, train_make_encoded_df], axis=1)
     X_test = pd.concat([X_test, test_make_encoded_df], axis=1)
-    
+
     # Once used drop the make feature
     X_train.drop(columns='make', inplace=True)
     X_test.drop(columns='make', inplace=True)
-    
+
     # Apply bodystyle transformation
     print("Apply bodystyle transformation")
     # Initialize the OneHotEncoder bodystyle
@@ -363,16 +409,20 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     train_bodystyle_encoded_data = ohe_bodystyle_model.fit_transform(X_train[['bodystyle']])
     test_bodystyle_encoded_data = ohe_bodystyle_model.fit_transform(X_test[['bodystyle']])
     # Convert the drivetrain encoded data into a DataFrame
-    train_bodystyle_encoded_df = pd.DataFrame(train_bodystyle_encoded_data, columns=bodystyle_encoder.get_feature_names_out(['bodystyle']), index=X_train.index)
-    test_bodystyle_encoded_df = pd.DataFrame(test_bodystyle_encoded_data, columns=bodystyle_encoder.get_feature_names_out(['bodystyle']), index=X_test.index)
+    train_bodystyle_encoded_df = pd.DataFrame(train_bodystyle_encoded_data,
+                                              columns=bodystyle_encoder.get_feature_names_out(['bodystyle']),
+                                              index=X_train.index)
+    test_bodystyle_encoded_df = pd.DataFrame(test_bodystyle_encoded_data,
+                                             columns=bodystyle_encoder.get_feature_names_out(['bodystyle']),
+                                             index=X_test.index)
     # Concatenate the original DataFrame with the drivetrain encoded DataFrame
     X_train = pd.concat([X_train, train_bodystyle_encoded_df], axis=1)
     X_test = pd.concat([X_test, test_bodystyle_encoded_df], axis=1)
-    
+
     # Once used drop the interior_color feature
     X_train.drop(columns='bodystyle', inplace=True)
     X_test.drop(columns='bodystyle', inplace=True)
-    
+
     # Apply cat transformation
     print("Apply cat transformation")
     # Apply lower case and remove special characters
@@ -386,13 +436,17 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     train_cat_vectors_s = X_train['cat'].apply(lambda ic: get_cat_phrase_vector(ic, cat_model))
     test_cat_vectors_s = X_test['cat'].apply(lambda ic: get_cat_phrase_vector(ic, cat_model))
     # Replace the nan values with an array of (0,0,0)
-    base_invalid_value = [0]*cat_vector_size
+    base_invalid_value = [0] * cat_vector_size
     train_cat_vectors_s = train_cat_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
     test_cat_vectors_s = test_cat_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
     # Generate the interior color df using the transformed feature vectors
-    train_cat_data = pd.DataFrame(train_cat_vectors_s.values.tolist(), columns=[f'cat_x{i}' for i in range(len(train_cat_vectors_s.iloc[0]))], index=X_train.index)
-    test_cat_data = pd.DataFrame(test_cat_vectors_s.values.tolist(), columns=[f'cat_x{i}' for i in range(len(test_cat_vectors_s.iloc[0]))], index=X_test.index)
-    
+    train_cat_data = pd.DataFrame(train_cat_vectors_s.values.tolist(),
+                                  columns=[f'cat_x{i}' for i in range(len(train_cat_vectors_s.iloc[0]))],
+                                  index=X_train.index)
+    test_cat_data = pd.DataFrame(test_cat_vectors_s.values.tolist(),
+                                 columns=[f'cat_x{i}' for i in range(len(test_cat_vectors_s.iloc[0]))],
+                                 index=X_test.index)
+
     # Concatenate the dataframes
     X_train = pd.concat([X_train, train_cat_data], axis=1)
     X_test = pd.concat([X_test, test_cat_data], axis=1)
@@ -400,7 +454,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Remove cat column
     X_train.drop(columns='cat', inplace=True)
     X_test.drop(columns='cat', inplace=True)
-        
+
     # Apply fuel type transformation
     print("Apply fuel_type transformation")
     X_train['fuel_type'] = X_train['fuel_type'].map(map_fuel_type)
@@ -408,7 +462,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Remove invalid fuel type
     X_train = X_train.loc[~X_train['fuel_type'].isna()]
     X_test = X_test.loc[~X_test['fuel_type'].isna()]
-    
+
     # Initialize the OneHotEncoder drivetrain
     fuel_type_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
     # Fit and transform the data
@@ -416,12 +470,16 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     train_fuel_type_encoded_data = ohe_fuel_type_model.transform(X_train[['fuel_type']])
     test_fuel_type_encoded_data = ohe_fuel_type_model.transform(X_test[['fuel_type']])
     # Convert the drivetrain encoded data into a DataFrame
-    train_fuel_type_encoded_df = pd.DataFrame(train_fuel_type_encoded_data, columns=fuel_type_encoder.get_feature_names_out(['fuel_type']), index=X_train.index)
-    test_fuel_type_encoded_df = pd.DataFrame(test_fuel_type_encoded_data, columns=fuel_type_encoder.get_feature_names_out(['fuel_type']), index=X_test.index)
+    train_fuel_type_encoded_df = pd.DataFrame(train_fuel_type_encoded_data,
+                                              columns=fuel_type_encoder.get_feature_names_out(['fuel_type']),
+                                              index=X_train.index)
+    test_fuel_type_encoded_df = pd.DataFrame(test_fuel_type_encoded_data,
+                                             columns=fuel_type_encoder.get_feature_names_out(['fuel_type']),
+                                             index=X_test.index)
     # Concatenate the original DataFrame with the drivetrain encoded DataFrame
     X_train = pd.concat([X_train, train_fuel_type_encoded_df], axis=1)
     X_test = pd.concat([X_test, test_fuel_type_encoded_df], axis=1)
-    
+
     # Once used drop the interior_color feature
     X_train.drop(columns='fuel_type', inplace=True)
     X_test.drop(columns='fuel_type', inplace=True)
@@ -438,15 +496,15 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     imputer_model_filepath = r'./data/data_exploration/output/preprocess_regression_imputer_model.pkl'
     if train_inputer:
         # Train imputer
-        imp = IterativeImputer(estimator=RandomForestRegressor(), verbose=1) 
+        imp = IterativeImputer(estimator=RandomForestRegressor(), verbose=1)
         # fit on the dataset 
-        imp.fit(X_train) 
+        imp.fit(X_train)
         # Save imnputer model
         joblib.dump(imp, imputer_model_filepath)
 
     # Load your model
     imp: IterativeImputer = joblib.load(imputer_model_filepath)
-       
+
     # Apply imputation
     train_df_trans = imp.transform(X_train)
     test_df_trans = imp.transform(X_test)
@@ -457,7 +515,8 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     print("####### Remove outliers data")
     # ### Outliers Removal
     print("Apply Outlier Removal")
-    iso_forest = IsolationForest(n_estimators=200, contamination=isolation_forest_contamination, random_state=42, verbose=1)
+    iso_forest = IsolationForest(n_estimators=200, contamination=isolation_forest_contamination, random_state=42,
+                                 verbose=1)
     # Fit the model
     iso_forest.fit(X_train)
     # Remove outliers 
@@ -470,15 +529,23 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     X_train.drop(columns='outlier', inplace=True)
     X_test.drop(columns='outlier', inplace=True)
     # Filter targets
-    y_train = y_train.loc[X_train.index]
-    y_test = y_test.loc[X_test.index]
+    y_train = y_train[y_train.index.isin(X_train.index)]
+    y_test = y_test[y_test.index.isin(X_test.index)]
 
     print(f"Cars train dataset size after preprocess: {X_train.shape}")
     print(f"Cars test dataset size after preprocess: {X_test.shape}")
+
+    # Export preprocess data
+    train_data_df = X_train.copy()
+    train_data_df['price'] = y_train
+    train_data_filepath = r'./data/data_exploration/output/train_data.csv'
+    train_data_df.to_csv(train_data_filepath)
+    test_data_df = X_test.copy()
+    test_data_df['price'] = y_test
+    test_data_filepath = r'./data/data_exploration/output/test_data.csv'
+    test_data_df.to_csv(test_data_filepath)
 
     print("Preprocess completed")
 
     # Return model
     return X_train, y_train, X_test, y_test, imp, iso_forest
-
-

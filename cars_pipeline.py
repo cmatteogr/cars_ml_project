@@ -10,7 +10,7 @@ cars_filepath = r'.\data\data_exploration\input\cars.csv'
 # Preprocess
 X_train, y_train, X_test, y_test, imputer_model, outlier_removal_model = preprocess(cars_filepath, test_size=0.15, train_inputer=False)
 
-# Trainiop[] 
+# Training
 train_model = 'automl'
 match train_model:
     case 'randomforest':
@@ -18,6 +18,8 @@ match train_model:
     case 'catboost':
         regression_model, results_json = train_cat_boost(X_train, y_train)
     case 'automl':
+        regression_model, results_json = train_automl(X_train, y_train)
+    case 'neural_network':
         regression_model, results_json = train_automl(X_train, y_train)
     case _:
         raise Exception(f"Invalid training model: {train_model}")
