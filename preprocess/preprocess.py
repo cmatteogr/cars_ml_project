@@ -9,7 +9,7 @@ import joblib
 from sklearn.feature_extraction import FeatureHasher
 from gensim.models import Word2Vec
 from gensim.utils import simple_preprocess
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.ensemble import RandomForestRegressor, IsolationForest
@@ -174,23 +174,23 @@ def map_stock_type(stock_type):
             raise Exception(f"No expected stock type: {stock_type}")
 
 
-def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency_threshold=300,
-               model_hash_batch_size=20,
-               exterior_color_vector_size=5, interior_color_vector_size=5, cat_vector_size=3, train_inputer=False,
-               isolation_forest_contamination=0.1):
+def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuency_threshold=300,
+               model_hash_batch_size=20, exterior_color_vector_size=5, interior_color_vector_size=5,
+               cat_vector_size=3, train_inputer=False, isolation_forest_contamination=0.1, scale_data=False):
     """
     Pre process cars data
 
     :param cars_filepath: Cars datasource filepath
     :param test_size: Test size to split dataset
     :param price_threshold: Price min value threshold
-    :param make_fecuency_threshold: Make category min frecuency value
+    :param make_frecuency_threshold: Make category min frecuency value
     :param model_hash_batch_size: Model hash batch size
     :param exterior_color_vector_size: exterior_color vector size
     :param interior_color_vector_size: interior_color vector size
     :param cat_vector_size: cat vector size
     :param train_inputer: Indicates whether imputer model is trained or not
     :param isolation_forest_contamination: Outlier removal contamination
+    :param scale_data: Scale data using min max scaler
 
     :return: X_train, y_train, X_test, y_test, impter model, outlier removal model
     
@@ -231,7 +231,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     # Compute the frequency of each category
     make_category_counts = cars_df['make'].value_counts()
     # Identify categories that exceed the threshold
-    make_categories_to_remove = make_category_counts[make_category_counts > make_fecuency_threshold].index
+    make_categories_to_remove = make_category_counts[make_category_counts > make_frecuency_threshold].index
     # Filter the DataFrame to exclude rows with these categories
     cars_df = cars_df[cars_df['make'].isin(make_categories_to_remove)]
 
@@ -532,6 +532,21 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     y_train = y_train[y_train.index.isin(X_train.index)]
     y_test = y_test[y_test.index.isin(X_test.index)]
 
+    # Scale data if needed
+    scaler = None
+    if scale_data:
+        print("####### Scale data")
+        # Init scaler model
+        scaler = MinMaxScaler()
+        scaler.fit(X_train)
+        print("Apply Scale Min/Max Transformation")
+        # Apply scale transformation
+        train_df_trans = scaler.transform(X_train)
+        test_df_trans = scaler.transform(X_test)
+        # transform the dataset
+        X_train = pd.DataFrame(train_df_trans, columns=X_train.columns, index=X_train.index)
+        X_test = pd.DataFrame(test_df_trans, columns=X_test.columns, index=X_test.index)
+
     print(f"Cars train dataset size after preprocess: {X_train.shape}")
     print(f"Cars test dataset size after preprocess: {X_test.shape}")
 
@@ -548,4 +563,4 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_fecuency
     print("Preprocess completed")
 
     # Return model
-    return X_train, y_train, X_test, y_test, imp, iso_forest
+    return X_train, y_train, X_test, y_test, imp, iso_forest, scaler

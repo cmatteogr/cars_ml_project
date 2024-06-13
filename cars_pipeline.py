@@ -2,16 +2,19 @@ from preprocess.preprocess import preprocess
 from train.train_random_forest import train as train_random_forest
 from train.train_cat_boost import train as train_cat_boost
 from train.train_automl import train as train_automl
-
-
+from train.train_neural_network_tensorflow import train as train_neural_network_tensorflow
+from train.train_neural_network_pytorch import train as train_neural_network_pytorch
 
 cars_filepath = r'.\data\data_exploration\input\cars.csv'
 
 # Preprocess
-X_train, y_train, X_test, y_test, imputer_model, outlier_removal_model = preprocess(cars_filepath, test_size=0.15, train_inputer=False)
+X_train, y_train, X_test, y_test, imputer_model, outlier_removal_model, scale_model = preprocess(cars_filepath,
+                                                                                                 test_size=0.15,
+                                                                                                 train_inputer=False,
+                                                                                                 scale_data=True)
 
 # Training
-train_model = 'automl'
+train_model = 'neural_network_pytorch'
 match train_model:
     case 'randomforest':
         regression_model, results_json = train_random_forest(X_train, y_train)
@@ -19,7 +22,15 @@ match train_model:
         regression_model, results_json = train_cat_boost(X_train, y_train)
     case 'automl':
         regression_model, results_json = train_automl(X_train, y_train)
-    case 'neural_network':
-        regression_model, results_json = train_automl(X_train, y_train)
+    case 'neural_network_tensorflow':
+        regression_model, results_json = train_neural_network_tensorflow(X_train, y_train)
+    case 'neural_network_pytorch':
+        regression_model, results_json = train_neural_network_pytorch(X_train, y_train)
     case _:
         raise Exception(f"Invalid training model: {train_model}")
+
+# Test
+
+# Deployment
+
+# Inference
