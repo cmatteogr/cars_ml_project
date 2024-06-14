@@ -8,6 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
+import json
 
 
 def train(X, y):
@@ -47,10 +48,10 @@ def train(X, y):
     # loss function and optimizer
     loss_fn = nn.MSELoss()  # mean square error
     # Select the optimizer
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.RMSprop(model.parameters())
 
     # Init training variables
-    n_epochs = 200  # number of epochs to run
+    n_epochs = 2000  # number of epochs to run
     batch_size = 32  # size of each batch
     train_dataset = TensorDataset(torch.tensor(X_train).float(), torch.tensor(y_train).float())
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -75,7 +76,7 @@ def train(X, y):
         y_pred = model(X_validation)
         mse = loss_fn(y_pred, y_validation)
         mse = float(mse)
-        print(f'Epoch {epoch}. MSE: {mse:.2f}')
+        print(f'epoch {epoch}. mse: {mse:.2f}')
         history.append(mse)
         if mse < best_mse:
             best_mse = mse
@@ -101,16 +102,21 @@ def train(X, y):
         r2 = r2_score(y_validation, y_validation_predictions)
         mse = mean_squared_error(y_validation, y_validation_predictions)
         mae = mean_absolute_error(y_validation, y_validation_predictions)
-        results_json = {
-            'r2': r2,
-            'mse': mse,
-            'mae': mae,
-        }
-        print("results:", results_json)
         # Build the training report results
         X_tensor = torch.tensor(X.values, dtype=torch.float32)
         y_X_predictions = model(X_tensor)
         predictions_df['prediction_price'] = y_X_predictions
+
+    # Save Model results
+    results_json = {
+        'r2': r2,
+        'mse': float(mse),
+        'mae': float(mae),
+    }
+    print("results:", results_json)
+    model_results_filepath = r'./data/train/neural_network_pytorch_model_training_results.json'
+    with open(model_results_filepath, 'w') as f:
+        json.dump(results_json, f)
 
     # Save model
     model_filepath = r'./data/train/neural_network_pytorch_model_cars_price_prediction.pth'

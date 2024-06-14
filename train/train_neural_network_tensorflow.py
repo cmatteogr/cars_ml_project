@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras import Input, Sequential
 from tensorflow.keras.layers import Dense
 import matplotlib.pyplot as plt
+import json
 
 
 def train(X, y):
@@ -29,11 +30,11 @@ def train(X, y):
     model.compile(loss='mse', optimizer='rmsprop')
 
     # Train the model
-    n_epochs = 100  # number of epochs to run
+    n_epochs = 1000  # number of epochs to run
     validation_split = 0.2  # validation percentage size
     batch_size = 32  # size of each batch
     # init the early stopping callback
-    callback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=1)
+    callback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=5)
     # Train model
     history = model.fit(X, y, epochs=n_epochs, verbose=1, batch_size=batch_size, validation_split=validation_split,
               callbacks=[callback])
@@ -51,6 +52,9 @@ def train(X, y):
         'mae': mae,
     }
     print("results:", results_json)
+    model_results_filepath = r'./data/train/neural_network_tensorflow_model_training_results.json'
+    with open(model_results_filepath, 'w') as f:
+        json.dump(results_json, f)
 
     # Plot the history training
     hist = history.history
