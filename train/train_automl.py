@@ -1,16 +1,13 @@
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-from sklearn.metrics import mean_squared_error, mean_absolute_error
-from pycaret.regression import predict_model
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from pycaret.regression import *
+import json
 
 
 def train(X, y):
     """
     Train regression model to predict cars price
-
-    :param X_train: training dataset
-    :param y_train: training target
-
+    :param X: training dataset
+    :param y: training target
     :return: Model trained and results
     """
     print("Train AutoML Regressor model")
@@ -18,10 +15,10 @@ def train(X, y):
     X['price'] = y
 
     # Setup model
-    clf = setup(X, target='price')
+    setup(X, target='price')
 
     # Comparing models to select the best one
-    best_model = compare_models()
+    compare_models()
 
     # Creating a model - let's say a Random Forest Classifier
     # You can replace 'rf' with a model of your choice
@@ -45,11 +42,14 @@ def train(X, y):
         'mse': mse,
         'mae': mae,
     }
-    print("results:",results_json)
+    print("results:", results_json)
 
-    # Save model
-    model_filepath = r'./data/train/automl_model_cars_price_prediction'
+    # Save model and results
+    model_filepath = r'./artifacts/automl_model_cars_price_prediction'
     save_model(final_model, model_filepath)
+    model_results_filepath = './artifacts/automl_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as json_file:
+        json.dump(results_json, json_file)
 
     # Save results
     train_filepath = r'./data/train/automl_cars_price_validation_prediction.csv'
@@ -58,4 +58,4 @@ def train(X, y):
     print("Training AutoML Regressor Completed")
 
     # Return trained model and model results
-    return model_filepath, results_json
+    return model_filepath, model_results_filepath

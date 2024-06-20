@@ -1,19 +1,17 @@
-
 from skopt import BayesSearchCV
 from skopt.space import Real, Integer
 from catboost import CatBoostRegressor
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
 import pickle
+import json
 
 
 def train(X, y):
     """
     Train regression model to predict cars price
-
-    :param X_train: training dataset
-    :param y_train: training target
-
+    :param X: training dataset
+    :param y: training target
     :return: Model trained and results
     """
     print("Train Cat Boost model")
@@ -36,10 +34,10 @@ def train(X, y):
         estimator=catboost_model,
         search_spaces=param_space,
         n_iter=30,  # Number of parameter settings that are sampled
-        cv=5,       # 4-fold cross-validation
+        cv=5,  # 4-fold cross-validation
         random_state=42
     )
-    
+
     # Fit the BayesSearchCV to the training data
     optimizer.fit(X_train.values, y_train.values)
 
@@ -72,20 +70,23 @@ def train(X, y):
         'mse': mse,
         'mae': mae,
     }
-    print("results:",results_json)
+    print("results:", results_json)
 
-    # Check if model is overfittied
+    # Check if model is overfitted
     if mse_validation > mse * 1.1:
         print(f'The model may be overfitting. train MSE: {mse}, validation MSE: {mse_validation}')
         raise Exception("The model may be overfitting")
     else:
         print(f'The model is not overfitting. train MSE: {mse}, validation MSE: {mse_validation}')
 
-    # Save model
-    model_filepath = './data/train/cat_boost_model_cars_price_prediction.pkl'
+    # Save model and results
+    model_filepath = './artifacts/cat_boost_model_cars_price_prediction.pkl'
     with open(model_filepath, 'wb') as file:
         pickle.dump(best_estimator, file)
-    
+    model_results_filepath = './artifacts/cat_boost_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as json_file:
+        json.dump(results_json, json_file)
+
     X_train['price'] = y_train
     X_validation['price'] = y_validation
     X_train['prediction_price'] = y_pred
@@ -98,4 +99,4 @@ def train(X, y):
     print("Training CatBoost Regressor Completed")
 
     # Return trained model and model results
-    return model_filepath, results_json, train_filepath, validation_filepath
+    return model_filepath, model_results_filepath

@@ -1,5 +1,4 @@
-from sklearn.metrics import r2_score
-from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import copy
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,10 +13,8 @@ import json
 def train(X, y):
     """
     Train regression model to predict cars price - Using Neural Networks with PyTorch
-
-    :param X_train: training dataset
-    :param y_train: training target
-
+    :param X: training dataset
+    :param y: training target
     :return: Model trained and results
     """
     print("Train Forward Neural Network - PyTorch model")
@@ -33,6 +30,8 @@ def train(X, y):
 
     # Define the model
     # Forward Neural Network dense connected,
+    # NOTE: Last layer doesn't have activation function to allow continuous output, without a limited range using
+    # linear activation (weights * inputs)
     model_input_shape = X_train.shape[1:][0]  # Input model shape
     model = nn.Sequential(
         nn.Linear(model_input_shape, 50),
@@ -42,7 +41,6 @@ def train(X, y):
         nn.Linear(30, 15),
         nn.ReLU(),
         nn.Linear(15, 1)
-        # Last layer doesn't have activation function to allow continuous output, without a limited range using linear activation (wiegths * inputs)
     )
 
     # loss function and optimizer
@@ -51,7 +49,7 @@ def train(X, y):
     optimizer = optim.RMSprop(model.parameters())
 
     # Init training variables
-    n_epochs = 2000  # number of epochs to run
+    n_epochs = 200  # number of epochs to run
     batch_size = 32  # size of each batch
     train_dataset = TensorDataset(torch.tensor(X_train).float(), torch.tensor(y_train).float())
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -114,19 +112,19 @@ def train(X, y):
         'mae': float(mae),
     }
     print("results:", results_json)
-    model_results_filepath = r'./data/train/neural_network_pytorch_model_training_results.json'
-    with open(model_results_filepath, 'w') as f:
-        json.dump(results_json, f)
-
-    # Save model
-    model_filepath = r'./data/train/neural_network_pytorch_model_cars_price_prediction.pth'
-    torch.save(model.state_dict(), model_filepath)
 
     # Save results
     train_filepath = r'./data/train/neural_network_pytorch_cars_price_validation_prediction.csv'
     predictions_df.to_csv(train_filepath, index=False)
 
+    # Save model and results
+    model_filepath = r'./artifacts/neural_network_pytorch_model_cars_price_prediction.pth'
+    torch.save(model, model_filepath)
+    model_results_filepath = r'./artifacts/neural_network_pytorch_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as f:
+        json.dump(results_json, f)
+
     print("Training Forward Neural Network - PyTorch Completed")
 
     # Return trained model and model results
-    return model_filepath, results_json
+    return model_filepath, model_results_filepath

@@ -141,7 +141,7 @@ def map_fuel_type(fuel_type):
         return np.nan
 
     match fuel_type:
-        case 'Gasoline' | 'Gasoline Fuel' | 'Diesel' | 'Premium Unleaded' | 'Regular Unleaded' | 'Premium Unleaded':
+        case 'Gasoline' | 'Gasoline Fuel' | 'Diesel' | 'Premium Unleaded' | 'Regular Unleaded' | 'Premium Unleaded' | 'Diesel Fuel':
             return 'Gasoline'
         case 'Electric' | 'Electric with Ga':
             return 'Electric'
@@ -150,7 +150,7 @@ def map_fuel_type(fuel_type):
         case 'Flexible Fuel' | 'E85 Flex Fuel' | 'Flexible':
             return 'Flexible'
         case _:
-            print(f"No expected drive train: {fuel_type}")
+            print(f"No expected fuel type: {fuel_type}")
             return np.nan
 
 
@@ -287,13 +287,13 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Tokenize colors sentences
     tokenized_exterior_color = [simple_preprocess(sentence) for sentence in X_train['exterior_color'].tolist()]
     # Train the Word2Vec model
-    exterior_color_model = Word2Vec(sentences=tokenized_exterior_color, vector_size=exterior_color_vector_size,
+    w2v_exterior_color_model = Word2Vec(sentences=tokenized_exterior_color, vector_size=exterior_color_vector_size,
                                     window=5, min_count=1, workers=4)
     # Calculate the vector for each interior color
     train_exterior_color_vectors_s = X_train['exterior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
+        lambda ic: get_interior_color_phrase_vector(ic, w2v_exterior_color_model))
     test_exterior_color_vectors_s = X_test['exterior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, exterior_color_model))
+        lambda ic: get_interior_color_phrase_vector(ic, w2v_exterior_color_model))
     # Replace the nan values with an array of (0,0,0)
     base_invalid_value = [0] * exterior_color_vector_size
     train_exterior_color_vectors_s = train_exterior_color_vectors_s.apply(
@@ -325,13 +325,13 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Tokenize colors sentences
     tokenized_interior_color = [simple_preprocess(sentence) for sentence in X_train['interior_color'].tolist()]
     # Train the Word2Vec model
-    interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size,
+    w2v_interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size,
                                     window=5, min_count=1, workers=4)
     # Calculate the vertor for each interior color
     train_interior_color_vectors_s = X_train['interior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
+        lambda ic: get_interior_color_phrase_vector(ic, w2v_interior_color_model))
     test_interior_color_vectors_s = X_test['interior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, interior_color_model))
+        lambda ic: get_interior_color_phrase_vector(ic, w2v_interior_color_model))
     # Replace the nan values with an array of (0,0,0)
     base_invalid_value = [0] * interior_color_vector_size
     train_interior_color_vectors_s = train_interior_color_vectors_s.apply(
@@ -431,10 +431,10 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Tokenize colors sentences
     tokenized_cat = [simple_preprocess(sentence) for sentence in X_train['cat'].tolist()]
     # Train the Word2Vec model
-    cat_model = Word2Vec(sentences=tokenized_cat, vector_size=cat_vector_size, window=5, min_count=1, workers=4)
+    w2v_cat_model = Word2Vec(sentences=tokenized_cat, vector_size=cat_vector_size, window=5, min_count=1, workers=4)
     # Calculate the vertor for each cat
-    train_cat_vectors_s = X_train['cat'].apply(lambda ic: get_cat_phrase_vector(ic, cat_model))
-    test_cat_vectors_s = X_test['cat'].apply(lambda ic: get_cat_phrase_vector(ic, cat_model))
+    train_cat_vectors_s = X_train['cat'].apply(lambda ic: get_cat_phrase_vector(ic, w2v_cat_model))
+    test_cat_vectors_s = X_test['cat'].apply(lambda ic: get_cat_phrase_vector(ic, w2v_cat_model))
     # Replace the nan values with an array of (0,0,0)
     base_invalid_value = [0] * cat_vector_size
     train_cat_vectors_s = train_cat_vectors_s.apply(lambda x: x if isinstance(x, np.ndarray) else base_invalid_value)
@@ -464,17 +464,17 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     X_test = X_test.loc[~X_test['fuel_type'].isna()]
 
     # Initialize the OneHotEncoder drivetrain
-    fuel_type_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+    eho_fuel_type_model = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
     # Fit and transform the data
-    ohe_fuel_type_model = fuel_type_encoder.fit(X_train[['fuel_type']])
+    ohe_fuel_type_model = eho_fuel_type_model.fit(X_train[['fuel_type']])
     train_fuel_type_encoded_data = ohe_fuel_type_model.transform(X_train[['fuel_type']])
     test_fuel_type_encoded_data = ohe_fuel_type_model.transform(X_test[['fuel_type']])
     # Convert the drivetrain encoded data into a DataFrame
     train_fuel_type_encoded_df = pd.DataFrame(train_fuel_type_encoded_data,
-                                              columns=fuel_type_encoder.get_feature_names_out(['fuel_type']),
+                                              columns=eho_fuel_type_model.get_feature_names_out(['fuel_type']),
                                               index=X_train.index)
     test_fuel_type_encoded_df = pd.DataFrame(test_fuel_type_encoded_data,
-                                             columns=fuel_type_encoder.get_feature_names_out(['fuel_type']),
+                                             columns=eho_fuel_type_model.get_feature_names_out(['fuel_type']),
                                              index=X_test.index)
     # Concatenate the original DataFrame with the drivetrain encoded DataFrame
     X_train = pd.concat([X_train, train_fuel_type_encoded_df], axis=1)
@@ -493,7 +493,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # train/use Imputer
     print("Apply Iterative imputation")
     # NOTE: This condition is needed because the imputation model take a long trainning
-    imputer_model_filepath = r'./data/data_exploration/output/preprocess_regression_imputer_model.pkl'
+    imputer_model_filepath = r'./artifacts/preprocess_regression_imputer_model.pkl'
     if train_inputer:
         # Train imputer
         imp = IterativeImputer(estimator=RandomForestRegressor(), verbose=1)
@@ -553,14 +553,48 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Export preprocess data
     train_data_df = X_train.copy()
     train_data_df['price'] = y_train
-    train_data_filepath = r'./data/data_exploration/output/train_data.csv'
+    train_data_filepath = r'./data/preprocess/train_data.csv'
     train_data_df.to_csv(train_data_filepath)
     test_data_df = X_test.copy()
     test_data_df['price'] = y_test
-    test_data_filepath = r'./data/data_exploration/output/test_data.csv'
+    test_data_filepath = r'./data/preprocess/test_data.csv'
     test_data_df.to_csv(test_data_filepath)
+
+    # Save preprocess models
+    # Save drive train encoding model
+    print("Save preprocess models")
+    ohe_drivetrain_model_filepath = r'./artifacts/preprocess_ohe_drivetrain_model.pkl'
+    joblib.dump(ohe_drivetrain_model, ohe_drivetrain_model_filepath)
+    # Save make encoding model
+    ohe_make_model_filepath = r'./artifacts/preprocess_ohe_make_model.pkl'
+    joblib.dump(ohe_make_model, ohe_make_model_filepath)
+    # Save bodystyle encoding model
+    ohe_bodystyle_model_filepath = r'./artifacts/preprocess_ohe_bodystyle_model.pkl'
+    joblib.dump(ohe_bodystyle_model, ohe_bodystyle_model_filepath)
+    # Save bodystyle encoding model
+    ohe_fuel_type_model_filepath = r'./artifacts/preprocess_ohe_fuel_type_model.pkl'
+    joblib.dump(ohe_fuel_type_model, ohe_fuel_type_model_filepath)
+    # Save exterior color encoding model
+    w2v_exterior_color_model_filepath = r'./artifacts/preprocess_w2v_exterior_color_model.model'
+    w2v_exterior_color_model.save(w2v_exterior_color_model_filepath)
+    # Save interior color encoding model
+    w2v_interior_color_model_filepath = r'./artifacts/preprocess_w2v_interior_color_model.model'
+    w2v_interior_color_model.save(w2v_interior_color_model_filepath)
+    # Save exterior color encoding model
+    w2v_cat_model_filepath = r'./artifacts/preprocess_w2v_cat_model.model'
+    w2v_cat_model.save(w2v_cat_model_filepath)
+    # NOTE: imputer model was already saved
+    # Save isolation forest model
+    iso_forest_model_filepath = r'./artifacts/preprocess_outlier_detection_model.pkl'
+    joblib.dump(iso_forest, iso_forest_model_filepath)
+    # Save scaler model
+    scaler_model_filepath = r'./artifacts/preprocess_scaler_model.pkl'
+    joblib.dump(scaler, scaler_model_filepath)
 
     print("Preprocess completed")
 
     # Return model
-    return X_train, y_train, X_test, y_test, imp, iso_forest, scaler
+    return (X_train, y_train, X_test, y_test, imputer_model_filepath, iso_forest_model_filepath, scaler_model_filepath,
+            ohe_drivetrain_model_filepath, ohe_make_model_filepath, ohe_bodystyle_model_filepath,
+            ohe_fuel_type_model_filepath, w2v_exterior_color_model_filepath, w2v_interior_color_model_filepath,
+            w2v_cat_model_filepath)

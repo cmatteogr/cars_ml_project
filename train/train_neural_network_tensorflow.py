@@ -1,5 +1,4 @@
-from sklearn.metrics import r2_score
-from sklearn.metrics import mean_squared_error, mean_absolute_error
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import tensorflow as tf
 from tensorflow.keras import Input, Sequential
 from tensorflow.keras.layers import Dense
@@ -10,10 +9,8 @@ import json
 def train(X, y):
     """
     Train regression model to predict cars price - Using Neural Networks with TensorFlow
-
-    :param X_train: training dataset
-    :param y_train: training target
-
+    :param X: training dataset
+    :param y: training target
     :return: Model trained and results
     """
     print("Train Forward Neural Network - TensorFlow model")
@@ -42,19 +39,16 @@ def train(X, y):
     model.evaluate(X, y, verbose=0)
 
     # Calculate scores
-    y_predict = model.predict(X, verbose=0)
-    r2 = r2_score(y, y_predict)
-    mse = mean_squared_error(y, y_predict)
-    mae = mean_absolute_error(y, y_predict)
+    y_pred = model.predict(X, verbose=0)
+    r2 = r2_score(y, y_pred)
+    mse = mean_squared_error(y, y_pred)
+    mae = mean_absolute_error(y, y_pred)
     results_json = {
         'r2': r2,
         'mse': mse,
         'mae': mae,
     }
     print("results:", results_json)
-    model_results_filepath = r'./data/train/neural_network_tensorflow_model_training_results.json'
-    with open(model_results_filepath, 'w') as f:
-        json.dump(results_json, f)
 
     # Plot the history training
     hist = history.history
@@ -66,17 +60,20 @@ def train(X, y):
     # Copy Input dataset to generate report
     predictions_df = X.copy()
     predictions_df['price'] = y
-    predictions_df['prediction_price'] = y_predict
-
-    # Save model
-    model_filepath = r'./data/train/neural_network_tensorflow_model_cars_price_prediction.keras'
-    model.save(model_filepath)
+    predictions_df['prediction_price'] = y_pred
 
     # Save results
     train_filepath = r'./data/train/neural_network_tensorflow_cars_price_validation_prediction.csv'
     predictions_df.to_csv(train_filepath, index=False)
 
+    # Save model and results
+    model_filepath = r'./artifacts/neural_network_tensorflow_model_cars_price_prediction.keras'
+    model.save(model_filepath)
+    model_results_filepath = r'./artifacts/neural_network_tensorflow_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as f:
+        json.dump(results_json, f)
+
     print("Training Forward Neural Network - TensorFlow Completed")
 
     # Return trained model and model results
-    return model_filepath, results_json
+    return model_filepath, model_results_filepath

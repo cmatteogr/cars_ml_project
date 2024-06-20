@@ -1,26 +1,24 @@
-
 from skopt import BayesSearchCV
 from skopt.space import Real, Integer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
 import pickle
+import json
 
 
 def train(X, y):
     """
     Train regression model to predict cars price
-
-    :param X_train: training dataset
-    :param y_train: training target
-
+    :param X: training dataset
+    :param y: training target
     :return: Model trained and results
     """
     print("Train Random Dores Regressor model")
     # Define the parameter bayesian to search over
     param_space = {
         'n_estimators': Integer(10, 100),  # Number of trees in the forest
-        'max_depth': Integer(1, 100),       # Maximum depth of the tree
+        'max_depth': Integer(1, 100),  # Maximum depth of the tree
         'min_samples_split': Real(0.01, 1.0, 'uniform'),  # Minimum number of samples required to split an internal node
     }
 
@@ -34,7 +32,7 @@ def train(X, y):
         estimator=regression_model,
         search_spaces=param_space,
         n_iter=25,  # Number of parameter settings that are sampled
-        cv=5,       # 5-fold cross-validation
+        cv=5,  # 5-fold cross-validation
         random_state=42,
         verbose=1
     )
@@ -68,19 +66,22 @@ def train(X, y):
         'mse': mse,
         'mae': mae,
     }
-    print("results:",results_json)
-    
-    # Check if model is overfittied
+    print("results:", results_json)
+
+    # Check if model is overfitted
     if mse_validation > mse * 1.1:
         print(f'The model may be overfitting. train MSE: {mse}, validation MSE: {mse_validation}')
         raise Exception("The model may be overfitting")
     else:
         print(f'The model is not overfitting. train MSE: {mse}, validation MSE: {mse_validation}')
-    
-    # Save model
-    model_filepath = './data/train/random_forest_model_cars_price_prediction.pkl'
+
+    # Save model and results
+    model_filepath = './artifacts/random_forest_model_cars_price_prediction.pkl'
     with open(model_filepath, 'wb') as file:
         pickle.dump(best_estimator, file)
+    model_results_filepath = './artifacts/random_forest_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as json_file:
+        json.dump(results_json, json_file)
 
     # Save model results
     X_train['price'] = y_train
@@ -95,4 +96,4 @@ def train(X, y):
     print("Training Random Fores Regressor Completed")
 
     # Return trained model and model results
-    return model_filepath, results_json, train_filepath, validation_filepath
+    return model_filepath, model_results_filepath
