@@ -34,7 +34,7 @@ def train(X, y):
     callback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=5)
     # Train model
     history = model.fit(X, y, epochs=n_epochs, verbose=1, batch_size=batch_size, validation_split=validation_split,
-              callbacks=[callback])
+                        callbacks=[callback])
     # Evaluate model
     model.evaluate(X, y, verbose=0)
 
