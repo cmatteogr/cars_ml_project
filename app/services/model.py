@@ -38,7 +38,6 @@ class MLModel(BaseMLModel):
         cars_df = pd.DataFrame(data_dict)
         # NOTE: APPLY PREPROCESS
 
-
         # Apply prediction
         match self.model_tool:
             case 'randomforest':

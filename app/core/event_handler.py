@@ -38,7 +38,8 @@ def _startup_model(app: FastAPI, model_path: str, models_names: tuple) -> None:
     # Load imputer model
     imputer_model: IterativeImputer = joblib.load(os.path.join(model_path, model_data['imputer_model_filename']))
     # Load outlier detector model
-    outlier_detector_model: IsolationForest = joblib.load(os.path.join(model_path, model_data['anomaly_detection_model_filename']))
+    outlier_detector_model: IsolationForest = joblib.load(
+        os.path.join(model_path, model_data['anomaly_detection_model_filename']))
     # Load scaler model
     scaler_model: IsolationForest = joblib.load(os.path.join(model_path, model_data['scaler_model_filename']))
 
@@ -48,12 +49,12 @@ def _startup_model(app: FastAPI, model_path: str, models_names: tuple) -> None:
     model_instance = MLModel(model_filepath, model_tool)
 
     model_dict = {
-        'preprocess':{
+        'preprocess': {
             'ohe_drivetrain_model': ohe_drivetrain_model,
             'ohe_make_model': ohe_make_model,
             'ohe_bodystyle_model': ohe_bodystyle_model,
             'ohe_fuel_type_model': ohe_fuel_type_model,
-            
+
         }
     }
 
