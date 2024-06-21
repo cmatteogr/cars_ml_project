@@ -94,7 +94,8 @@ if os.path.exists(model_deployed_data_filepath):
 
 # Deployment
 print('Deploy Cars price prediction model')
-# Build model data
+
+# Get files names
 imputer_model_filename = os.path.basename(imputer_model_filepath)
 outlier_removal_model_filename = os.path.basename(outlier_removal_model_filepath)
 scale_model_filename = os.path.basename(scale_model_filepath)
@@ -109,6 +110,7 @@ w2v_exterior_color_model_filename = os.path.basename(w2v_exterior_color_model_fi
 w2v_interior_color_model_filename = os.path.basename(w2v_interior_color_model_filepath)
 w2v_cat_model_filename = os.path.basename(w2v_cat_model_filepath)
 
+# Build model data
 model_data = {
     'r2': test_model_results['r2'],
     'model_tool': model_tool,
@@ -129,9 +131,8 @@ model_data = {
 with open(model_deployed_data_filepath, 'w') as f:
     json.dump(model_data, f)
 
-# Collect all the artifacts and save them for deployment
+# Save the models in the deployment projects
 d_filepath = './app/ml_model'  # Deployment folder path
-# Copy the artifacts files in the inference project
 shutil.copy(imputer_model_filepath, os.path.join(d_filepath, imputer_model_filename))
 shutil.copy(outlier_removal_model_filepath, os.path.join(d_filepath, outlier_removal_model_filename))
 shutil.copy(scale_model_filepath, os.path.join(d_filepath, scale_model_filename))
