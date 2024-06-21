@@ -288,7 +288,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     tokenized_exterior_color = [simple_preprocess(sentence) for sentence in X_train['exterior_color'].tolist()]
     # Train the Word2Vec model
     w2v_exterior_color_model = Word2Vec(sentences=tokenized_exterior_color, vector_size=exterior_color_vector_size,
-                                    window=5, min_count=1, workers=4)
+                                        window=5, min_count=1, workers=4)
     # Calculate the vector for each interior color
     train_exterior_color_vectors_s = X_train['exterior_color'].apply(
         lambda ic: get_interior_color_phrase_vector(ic, w2v_exterior_color_model))
@@ -326,7 +326,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     tokenized_interior_color = [simple_preprocess(sentence) for sentence in X_train['interior_color'].tolist()]
     # Train the Word2Vec model
     w2v_interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size,
-                                    window=5, min_count=1, workers=4)
+                                        window=5, min_count=1, workers=4)
     # Calculate the vertor for each interior color
     train_interior_color_vectors_s = X_train['interior_color'].apply(
         lambda ic: get_interior_color_phrase_vector(ic, w2v_interior_color_model))
