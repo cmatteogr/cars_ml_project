@@ -5,6 +5,9 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
 import pickle
 import json
+import os
+
+from constants import ARTIFACTS_FOLDER_PATH
 
 
 def train(X, y):
@@ -76,11 +79,11 @@ def train(X, y):
         print(f'The model is not overfitting. train MSE: {mse}, validation MSE: {mse_validation}')
 
     # Save model and results
-    model_filepath = './artifacts/random_forest_model_cars_price_prediction.pkl'
-    with open(model_filepath, 'wb') as file:
+    model_filename = 'random_forest_model_cars_price_prediction.pkl'
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename), 'wb') as file:
         pickle.dump(best_estimator, file)
-    model_results_filepath = './artifacts/random_forest_model_cars_price_prediction_results.json'
-    with open(model_results_filepath, 'w') as json_file:
+    model_results_filename = 'random_forest_model_cars_price_prediction_results.json'
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_results_filename), 'w') as json_file:
         json.dump(results_json, json_file)
 
     # Save model results
@@ -96,4 +99,4 @@ def train(X, y):
     print("Training Random Fores Regressor Completed")
 
     # Return trained model and model results
-    return model_filepath, model_results_filepath
+    return model_filename, model_results_filename

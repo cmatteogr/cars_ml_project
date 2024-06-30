@@ -1,12 +1,15 @@
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import tensorflow as tf
 import json
+import os
+
+from constants import ARTIFACTS_FOLDER_PATH
 
 
-def test(model_filepath, X, y):
+def test(model_filename, X, y):
     """
     Test regression model to predict cars price
-    :param model_filepath: training dataset
+    :param model_filename: model filename
     :param X: test features
     :param y: test target
     :return: Model testing results
@@ -14,7 +17,7 @@ def test(model_filepath, X, y):
     print("Test Forward Neural Network - PyTorch model")
 
     # Load the model
-    model = tf.keras.models.load_model(model_filepath)
+    model = tf.keras.models.load_model(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
     # Predict test dataset
     y_pred = model.predict(X, verbose=0)
 

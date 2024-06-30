@@ -15,8 +15,10 @@ from sklearn.impute import IterativeImputer
 from sklearn.ensemble import RandomForestRegressor, IsolationForest
 from sklearn.model_selection import train_test_split
 import re
+import json
+import os
 
-from constants import RELEVANT_PREPROCESS_COLUMNS
+from constants import RELEVANT_PREPROCESS_COLUMNS, ARTIFACTS_FOLDER_PATH
 
 
 # Apply msrp value
@@ -174,7 +176,7 @@ def map_stock_type(stock_type):
             raise Exception(f"No expected stock type: {stock_type}")
 
 
-def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuency_threshold=300,
+def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequency_threshold=300,
                model_hash_batch_size=20, exterior_color_vector_size=5, interior_color_vector_size=5,
                cat_vector_size=3, train_inputer=False, isolation_forest_contamination=0.1, scale_data=False):
     """
@@ -183,7 +185,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     :param cars_filepath: Cars datasource filepath
     :param test_size: Test size to split dataset
     :param price_threshold: Price min value threshold
-    :param make_frecuency_threshold: Make category min frecuency value
+    :param make_frequency_threshold: Make category min frequency value
     :param model_hash_batch_size: Model hash batch size
     :param exterior_color_vector_size: exterior_color vector size
     :param interior_color_vector_size: interior_color vector size
@@ -192,7 +194,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     :param isolation_forest_contamination: Outlier removal contamination
     :param scale_data: Scale data using min max scaler
 
-    :return: X_train, y_train, X_test, y_test, impter model, outlier removal model
+    :return: X_train, y_train, X_test, y_test, preprocess_config_data
     
     """
     print("Star preprocess")
@@ -231,9 +233,9 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Compute the frequency of each category
     make_category_counts = cars_df['make'].value_counts()
     # Identify categories that exceed the threshold
-    make_categories_to_remove = make_category_counts[make_category_counts > make_frecuency_threshold].index
+    make_valid_categories = make_category_counts[make_category_counts > make_frequency_threshold].index
     # Filter the DataFrame to exclude rows with these categories
-    cars_df = cars_df[cars_df['make'].isin(make_categories_to_remove)]
+    cars_df = cars_df[cars_df['make'].isin(make_valid_categories)]
 
     print(f"Data set shape: {cars_df.shape}")
 
@@ -490,20 +492,20 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     X_test['stock_type'] = X_test['stock_type'].map(map_stock_type)
 
     print("####### Imputate data")
-    # train/use Imputer
+    # train/use Impute
     print("Apply Iterative imputation")
-    # NOTE: This condition is needed because the imputation model take a long trainning
-    imputer_model_filepath = r'./artifacts/preprocess_regression_imputer_model.pkl'
+    # NOTE: This condition is needed because the imputation model take a long training
+    imputer_model_filename = 'preprocess_regression_imputer_model.pkl'
     if train_inputer:
         # Train imputer
         imp = IterativeImputer(estimator=RandomForestRegressor(), verbose=1)
         # fit on the dataset 
         imp.fit(X_train)
         # Save imnputer model
-        joblib.dump(imp, imputer_model_filepath)
+        joblib.dump(imp, os.path.join(ARTIFACTS_FOLDER_PATH, imputer_model_filename))
 
     # Load your model
-    imp: IterativeImputer = joblib.load(imputer_model_filepath)
+    imp: IterativeImputer = joblib.load(os.path.join(ARTIFACTS_FOLDER_PATH, imputer_model_filename))
 
     # Apply imputation
     train_df_trans = imp.transform(X_train)
@@ -563,38 +565,59 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frecuenc
     # Save preprocess models
     # Save drive train encoding model
     print("Save preprocess models")
-    ohe_drivetrain_model_filepath = r'./artifacts/preprocess_ohe_drivetrain_model.pkl'
-    joblib.dump(ohe_drivetrain_model, ohe_drivetrain_model_filepath)
+
+    ohe_drivetrain_model_filename = 'preprocess_ohe_drivetrain_model.pkl'
+    joblib.dump(ohe_drivetrain_model, os.path.join(ARTIFACTS_FOLDER_PATH, ohe_drivetrain_model_filename))
     # Save make encoding model
-    ohe_make_model_filepath = r'./artifacts/preprocess_ohe_make_model.pkl'
-    joblib.dump(ohe_make_model, ohe_make_model_filepath)
+    ohe_make_model_filename = 'preprocess_ohe_make_model.pkl'
+    joblib.dump(ohe_make_model, os.path.join(ARTIFACTS_FOLDER_PATH, ohe_make_model_filename))
     # Save bodystyle encoding model
-    ohe_bodystyle_model_filepath = r'./artifacts/preprocess_ohe_bodystyle_model.pkl'
-    joblib.dump(ohe_bodystyle_model, ohe_bodystyle_model_filepath)
+    ohe_bodystyle_model_filename = 'preprocess_ohe_bodystyle_model.pkl'
+    joblib.dump(ohe_bodystyle_model, os.path.join(ARTIFACTS_FOLDER_PATH, ohe_bodystyle_model_filename))
     # Save bodystyle encoding model
-    ohe_fuel_type_model_filepath = r'./artifacts/preprocess_ohe_fuel_type_model.pkl'
-    joblib.dump(ohe_fuel_type_model, ohe_fuel_type_model_filepath)
+    ohe_fuel_type_model_filename = 'preprocess_ohe_fuel_type_model.pkl'
+    joblib.dump(ohe_fuel_type_model, os.path.join(ARTIFACTS_FOLDER_PATH, ohe_fuel_type_model_filename))
     # Save exterior color encoding model
-    w2v_exterior_color_model_filepath = r'./artifacts/preprocess_w2v_exterior_color_model.model'
-    w2v_exterior_color_model.save(w2v_exterior_color_model_filepath)
+    w2v_exterior_color_model_filename = 'preprocess_w2v_exterior_color_model.model'
+    w2v_exterior_color_model.save(os.path.join(ARTIFACTS_FOLDER_PATH, w2v_exterior_color_model_filename))
     # Save interior color encoding model
-    w2v_interior_color_model_filepath = r'./artifacts/preprocess_w2v_interior_color_model.model'
-    w2v_interior_color_model.save(w2v_interior_color_model_filepath)
+    w2v_interior_color_model_filename = 'preprocess_w2v_interior_color_model.model'
+    w2v_interior_color_model.save(os.path.join(ARTIFACTS_FOLDER_PATH, w2v_interior_color_model_filename))
     # Save exterior color encoding model
-    w2v_cat_model_filepath = r'./artifacts/preprocess_w2v_cat_model.model'
-    w2v_cat_model.save(w2v_cat_model_filepath)
+    w2v_cat_model_filename = 'preprocess_w2v_cat_model.model'
+    w2v_cat_model.save(os.path.join(ARTIFACTS_FOLDER_PATH, w2v_cat_model_filename))
     # NOTE: imputer model was already saved
     # Save isolation forest model
-    iso_forest_model_filepath = r'./artifacts/preprocess_outlier_detection_model.pkl'
-    joblib.dump(iso_forest, iso_forest_model_filepath)
+    iso_forest_model_filename = 'preprocess_outlier_detection_model.pkl'
+    joblib.dump(iso_forest, os.path.join(ARTIFACTS_FOLDER_PATH, iso_forest_model_filename))
     # Save scaler model
-    scaler_model_filepath = r'./artifacts/preprocess_scaler_model.pkl'
-    joblib.dump(scaler, scaler_model_filepath)
+    scaler_model_filename = 'preprocess_scaler_model.pkl'
+    joblib.dump(scaler, os.path.join(ARTIFACTS_FOLDER_PATH, scaler_model_filename))
+
+    # Build preprocess data report
+    preprocess_config_data = {
+        'preprocess_config': {
+            'price_threshold': price_threshold,
+            'make_valid_categories': make_valid_categories,
+        },
+        'models_filenames': {
+            'imputer_model_filename': imputer_model_filename,
+            'scaler_model_filename': scaler_model_filename,
+            'iso_forest_model_filename': iso_forest_model_filename,
+            'ohe_drivetrain_model_filename': ohe_drivetrain_model_filename,
+            'ohe_make_model_filename': ohe_make_model_filename,
+            'ohe_bodystyle_model_filename': ohe_bodystyle_model_filename,
+            'ohe_fuel_type_model_filename': ohe_fuel_type_model_filename,
+            'w2v_exterior_color_model_filename': w2v_exterior_color_model_filename,
+            'w2v_interior_color_model_filename': w2v_interior_color_model_filename,
+            'w2v_cat_model_filename': w2v_cat_model_filename
+        }
+    }
+    preprocess_config_filename = 'preprocess_config.json'
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, preprocess_config_filename), 'w') as json_file:
+        json.dump(preprocess_config_data, json_file)
 
     print("Preprocess completed")
 
     # Return model
-    return (X_train, y_train, X_test, y_test, imputer_model_filepath, iso_forest_model_filepath, scaler_model_filepath,
-            ohe_drivetrain_model_filepath, ohe_make_model_filepath, ohe_bodystyle_model_filepath,
-            ohe_fuel_type_model_filepath, w2v_exterior_color_model_filepath, w2v_interior_color_model_filepath,
-            w2v_cat_model_filepath)
+    return X_train, y_train, X_test, y_test, preprocess_config_data

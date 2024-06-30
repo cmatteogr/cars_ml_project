@@ -1,6 +1,9 @@
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from pycaret.regression import *
 import json
+import os
+
+from constants import ARTIFACTS_FOLDER_PATH
 
 
 def train(X, y):
@@ -45,10 +48,10 @@ def train(X, y):
     print("results:", results_json)
 
     # Save model and results
-    model_filepath = r'./artifacts/automl_model_cars_price_prediction'
-    save_model(final_model, model_filepath)
-    model_results_filepath = './artifacts/automl_model_cars_price_prediction_results.json'
-    with open(model_results_filepath, 'w') as json_file:
+    model_filename = 'automl_model_cars_price_prediction'
+    save_model(final_model, os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
+    model_results_filename = 'automl_model_cars_price_prediction_results.json'
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_results_filename), 'w') as json_file:
         json.dump(results_json, json_file)
 
     # Save results
@@ -58,4 +61,4 @@ def train(X, y):
     print("Training AutoML Regressor Completed")
 
     # Return trained model and model results
-    return model_filepath, model_results_filepath
+    return model_filename, model_results_filename

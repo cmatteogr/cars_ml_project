@@ -1,11 +1,14 @@
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from pycaret.regression import load_model
+import os
+
+from constants import ARTIFACTS_FOLDER_PATH
 
 
-def test(model_filepath, X, y):
+def test(model_filename, X, y):
     """
     Test regression model to predict cars price
-    :param model_filepath: training dataset
+    :param model_filename: model filename
     :param X: test features
     :param y: test target
     :return: Model testing results
@@ -13,7 +16,7 @@ def test(model_filepath, X, y):
     print("Test AutoML Regressor model")
 
     # Read the model
-    regression_cars_price_model = load_model(model_filepath)
+    regression_cars_price_model = load_model(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
     # Predict test dataset
     predictions_df = regression_cars_price_model.predict(X)
     # Join the train set and train target

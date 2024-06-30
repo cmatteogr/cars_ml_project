@@ -8,6 +8,9 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 import json
+import os
+
+from constants import ARTIFACTS_FOLDER_PATH
 
 
 def train(X, y):
@@ -35,6 +38,7 @@ def train(X, y):
     model_input_shape = X_train.shape[1:][0]  # Input model shape
     model = nn.Sequential(
         nn.Linear(model_input_shape, 50),
+
         nn.ReLU(),
         nn.Linear(50, 30),
         nn.ReLU(),
@@ -118,13 +122,13 @@ def train(X, y):
     predictions_df.to_csv(train_filepath, index=False)
 
     # Save model and results
-    model_filepath = r'./artifacts/neural_network_pytorch_model_cars_price_prediction.pth'
-    torch.save(model, model_filepath)
-    model_results_filepath = r'./artifacts/neural_network_pytorch_model_cars_price_prediction_results.json'
-    with open(model_results_filepath, 'w') as f:
+    model_filename = 'neural_network_pytorch_model_cars_price_prediction.pth'
+    torch.save(model, os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
+    model_results_filename = 'neural_network_pytorch_model_cars_price_prediction_results.json'
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_results_filename), 'w') as f:
         json.dump(results_json, f)
 
     print("Training Forward Neural Network - PyTorch Completed")
 
     # Return trained model and model results
-    return model_filepath, model_results_filepath
+    return model_filename, model_results_filename

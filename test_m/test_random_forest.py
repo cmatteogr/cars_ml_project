@@ -2,12 +2,14 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import pickle
 import json
+import os
 
+from constants import ARTIFACTS_FOLDER_PATH
 
-def test(model_filepath, X, y):
+def test(model_filename, X, y):
     """
     Test regression model to predict cars price
-    :param model_filepath: training dataset
+    :param model_filename: model filename
     :param X: test features
     :param y: test target
     :return: Model testing results
@@ -15,7 +17,7 @@ def test(model_filepath, X, y):
     print("Train Random Forest Regressor model")
 
     # Load the model
-    with open(model_filepath, 'rb') as file:
+    with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename), 'rb') as file:
         regression_cars_price_model: RandomForestRegressor = pickle.load(file)
     # Predict test dataset
     y_pred = regression_cars_price_model.predict(X.values)
