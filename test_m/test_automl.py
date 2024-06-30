@@ -16,7 +16,7 @@ def test(model_filename, X, y):
     print("Test AutoML Regressor model")
 
     # Read the model
-    regression_cars_price_model = load_model(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
+    regression_cars_price_model = load_model(str(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename)))
     # Predict test dataset
     predictions_df = regression_cars_price_model.predict(X)
     # Join the train set and train target

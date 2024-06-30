@@ -17,7 +17,7 @@ def test(model_filename, X, y):
     print("Test Forward Neural Network - PyTorch model")
 
     # Load the model
-    model = torch.load(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename))
+    model = torch.load(str(os.path.join(ARTIFACTS_FOLDER_PATH, model_filename)))
     model.eval()
     # Transform input to tensor
     X_tensor = torch.tensor(X.values, dtype=torch.float32)

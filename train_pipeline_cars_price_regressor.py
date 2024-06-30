@@ -101,6 +101,6 @@ with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filename), 'w'
 # Save the models in the deployment projects
 # Move the preprocess models to deploy
 for key, m_filename in preprocess_config_data['models_filenames'].items():
-    shutil.copy(os.path.join(ARTIFACTS_FOLDER_PATH, m_filename), os.path.join(DEPLOYMENT_FOLDER_PATH, m_filename))
+    shutil.copy(str(os.path.join(ARTIFACTS_FOLDER_PATH, m_filename)), str(os.path.join(DEPLOYMENT_FOLDER_PATH, m_filename)))
 
 print('Train pipeline completed')

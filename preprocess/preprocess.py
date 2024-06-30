@@ -49,7 +49,7 @@ def clean_exterior_color(exterior_color):
     return exterior_color
 
 
-def get_interior_color_phrase_vector(exterior_color_phrase, model):
+def get_exterior_color_phrase_vector(exterior_color_phrase, model):
     exterior_color_words = exterior_color_phrase.split()
     exterior_color_word_vectors = [model.wv[word] for word in exterior_color_words if word in model.wv]
     if not exterior_color_word_vectors:
@@ -83,7 +83,7 @@ def get_interior_color_phrase_vector(interior_color_phrase, model):
 
 def map_drivetrain(drivetrain):
     """
-    Group the drive trian by categories
+    Group the drive train by categories
 
     :param drivetrain: Car drive train
 
@@ -137,7 +137,7 @@ def map_fuel_type(fuel_type):
 
     :param fuel_type: Car fuel type
 
-    :return Fuel type category
+    :return: Fuel type category
     """
     if pd.isna(fuel_type):
         return np.nan
@@ -162,7 +162,7 @@ def map_stock_type(stock_type):
 
     :param stock_type: stock type New/Used
 
-    :return Binary stock_type 
+    :return: Binary stock_type
     """
     if pd.isna(stock_type):
         return np.nan
@@ -293,9 +293,9 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
                                         window=5, min_count=1, workers=4)
     # Calculate the vector for each interior color
     train_exterior_color_vectors_s = X_train['exterior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, w2v_exterior_color_model))
+        lambda ic: get_exterior_color_phrase_vector(ic, w2v_exterior_color_model))
     test_exterior_color_vectors_s = X_test['exterior_color'].apply(
-        lambda ic: get_interior_color_phrase_vector(ic, w2v_exterior_color_model))
+        lambda ic: get_exterior_color_phrase_vector(ic, w2v_exterior_color_model))
     # Replace the nan values with an array of (0,0,0)
     base_invalid_value = [0] * exterior_color_vector_size
     train_exterior_color_vectors_s = train_exterior_color_vectors_s.apply(
