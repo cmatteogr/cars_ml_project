@@ -25,13 +25,9 @@ scale_data = model_tool in ['neural_network_tensorflow', 'neural_network_pytorch
 train_inputer = False
 
 # Preprocess
-preprocess_result = preprocess(cars_filepath, test_size=0.15, train_inputer=train_inputer, scale_data=scale_data)
-# Get the preprocess result
-X_train = preprocess_result[0]
-y_train = preprocess_result[1]
-X_test = preprocess_result[2]
-y_test = preprocess_result[3]
-preprocess_config_data = preprocess_result[4]
+X_train, y_train, X_test, y_test, preprocess_config_data = preprocess(cars_filepath, test_size=0.15,
+                                                                      train_inputer=train_inputer,
+                                                                      scale_data=scale_data)
 
 # Training
 match model_tool:
@@ -48,6 +44,7 @@ match model_tool:
     case _:
         raise Exception(f"Invalid training model: {model_tool}")
 
+regression_model_filename = 'automl_model_cars_price_prediction'
 # Test
 match model_tool:
     case 'randomforest':
@@ -70,7 +67,8 @@ print(f'Check trained model performance')
 with open(model_results_filepath, 'r') as json_file:
     test_model_results = json.load(json_file)
 if test_model_results['r2'] < r2_threshold:
-    raise Exception(f"R2 score below threshold is {r2_threshold}. The model doesn't have a good quality. Improve it.")
+    raise Exception(
+        f"R2 score below threshold is {r2_threshold}. The model doesn't have a good quality. Improve it: Current R2 {test_model_results['r2']}")
 
 print(f'Trained model R2 score above: {r2_threshold}')
 # Check if the model report data exist - previous model deployed
@@ -80,7 +78,7 @@ if os.path.exists(os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filena
     with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filename), 'r') as json_file:
         current_model_data = json.load(json_file)
     # Compare R2
-    if current_model_data['r2'] < test_model_results['r2']:
+    if current_model_data['r2'] > test_model_results['r2']:
         raise Exception(f"R2 score below current model deployed is {test_model_results['r2']}")
     else:
         print(f"Trained model R2 score above Current model deployed is {test_model_results['r2']}")
@@ -93,7 +91,7 @@ model_data = {
     'r2': test_model_results['r2'],
     'model_tool': model_tool,
     'preprocess_config_data': preprocess_config_data,
-    'model_deployed_data_filepath': os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filename),
+    'model_price_regression_filepath': regression_model_filename,
 }
 with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filename), 'w') as f:
     json.dump(model_data, f)
@@ -101,6 +99,7 @@ with open(os.path.join(ARTIFACTS_FOLDER_PATH, model_deployed_data_filename), 'w'
 # Save the models in the deployment projects
 # Move the preprocess models to deploy
 for key, m_filename in preprocess_config_data['models_filenames'].items():
-    shutil.copy(str(os.path.join(ARTIFACTS_FOLDER_PATH, m_filename)), str(os.path.join(DEPLOYMENT_FOLDER_PATH, m_filename)))
+    shutil.copy(str(os.path.join(ARTIFACTS_FOLDER_PATH, m_filename)),
+                str(os.path.join(DEPLOYMENT_FOLDER_PATH, m_filename)))
 
 print('Train pipeline completed')

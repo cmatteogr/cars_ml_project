@@ -30,7 +30,7 @@ def train(X, y):
     X_train, X_validation, y_train, y_validation = train_test_split(X, y, test_size=0.15, random_state=42)
 
     # Initialize Random Forest Regressor algorithm 
-    catboost_model = CatBoostRegressor(verbose=1, random_state=42)
+    catboost_model = CatBoostRegressor(verbose=1, random_state=42, allow_writing_files=False)
 
     # Search the best hyperparameters
     optimizer = BayesSearchCV(

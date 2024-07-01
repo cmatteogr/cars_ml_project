@@ -39,4 +39,4 @@ def test(model_filename, X, y):
     print("Test Random Forest Regressor Completed")
 
     # Return model results
-    return results_json
+    return model_results_filepath

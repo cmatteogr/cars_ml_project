@@ -2,6 +2,7 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import pickle
 from catboost import CatBoostRegressor
 import os
+import json
 
 from constants import ARTIFACTS_FOLDER_PATH
 
@@ -32,8 +33,11 @@ def test(model_filename, X, y):
         'mae': mae,
     }
     print("results:", results_json)
+    model_results_filepath = r'./data/test/catboost_model_cars_price_prediction_results.json'
+    with open(model_results_filepath, 'w') as f:
+        json.dump(results_json, f)
 
     print("Test CatBoost Regressor Completed")
 
     # Return model results
-    return results_json
+    return model_results_filepath

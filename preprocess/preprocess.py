@@ -248,7 +248,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     y_train.index = X_train.index
     y_test.index = X_test.index
 
-    print("####### Transfom data")
+    print("####### Transform data")
     # ### Apply Features transformation
     # Apply msrp transformation
     print("Apply msrp transformation")
@@ -262,10 +262,10 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     # Define the number of hash space
     n_hash = int(len(X_train['model'].unique()) / model_hash_batch_size)  # This values is a hyperparameter
     # Initialize FeatureHasher
-    hasher = FeatureHasher(n_features=n_hash, input_type='dict')
+    hasher_model_model = FeatureHasher(n_features=n_hash, input_type='dict')
     # Apply FeatureHasher
-    train_model_hashed = hasher.transform(train_model_data)
-    test_model_hashed = hasher.transform(test_model_data)
+    train_model_hashed = hasher_model_model.transform(train_model_data)
+    test_model_hashed = hasher_model_model.transform(test_model_data)
     # Generate model hashed dataframe
     train_model_hashed_df = pd.DataFrame(train_model_hashed.toarray(),
                                          columns=[f'model_hashed_{i}' for i in range(train_model_hashed.shape[1])],
@@ -329,7 +329,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     # Train the Word2Vec model
     w2v_interior_color_model = Word2Vec(sentences=tokenized_interior_color, vector_size=interior_color_vector_size,
                                         window=5, min_count=1, workers=4)
-    # Calculate the vertor for each interior color
+    # Calculate the vector for each interior color
     train_interior_color_vectors_s = X_train['interior_color'].apply(
         lambda ic: get_interior_color_phrase_vector(ic, w2v_interior_color_model))
     test_interior_color_vectors_s = X_test['interior_color'].apply(
@@ -566,6 +566,10 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     # Save drive train encoding model
     print("Save preprocess models")
 
+    # Save Hasher model model
+    hasher_model_model_filename = 'preprocess_hasher_model_model.pkl'
+    joblib.dump(hasher_model_model, os.path.join(ARTIFACTS_FOLDER_PATH, hasher_model_model_filename))
+    # Save Drive train encoding model
     ohe_drivetrain_model_filename = 'preprocess_ohe_drivetrain_model.pkl'
     joblib.dump(ohe_drivetrain_model, os.path.join(ARTIFACTS_FOLDER_PATH, ohe_drivetrain_model_filename))
     # Save make encoding model
@@ -598,12 +602,16 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     preprocess_config_data = {
         'preprocess_config': {
             'price_threshold': price_threshold,
-            'make_valid_categories': make_valid_categories,
+            'make_valid_categories': list(make_valid_categories),
+            'exterior_color_vector_size': exterior_color_vector_size,
+            'interior_color_vector_size': interior_color_vector_size,
+            'cat_vector_size': cat_vector_size
         },
         'models_filenames': {
             'imputer_model_filename': imputer_model_filename,
             'scaler_model_filename': scaler_model_filename,
             'iso_forest_model_filename': iso_forest_model_filename,
+            'hasher_model_model_filename': hasher_model_model_filename,
             'ohe_drivetrain_model_filename': ohe_drivetrain_model_filename,
             'ohe_make_model_filename': ohe_make_model_filename,
             'ohe_bodystyle_model_filename': ohe_bodystyle_model_filename,
