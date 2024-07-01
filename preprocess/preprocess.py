@@ -408,8 +408,8 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
     bodystyle_encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
     # Fit and transform the data
     ohe_bodystyle_model = bodystyle_encoder.fit(X_train[['bodystyle']])
-    train_bodystyle_encoded_data = ohe_bodystyle_model.fit_transform(X_train[['bodystyle']])
-    test_bodystyle_encoded_data = ohe_bodystyle_model.fit_transform(X_test[['bodystyle']])
+    train_bodystyle_encoded_data = ohe_bodystyle_model.transform(X_train[['bodystyle']])
+    test_bodystyle_encoded_data = ohe_bodystyle_model.transform(X_test[['bodystyle']])
     # Convert the drivetrain encoded data into a DataFrame
     train_bodystyle_encoded_df = pd.DataFrame(train_bodystyle_encoded_data,
                                               columns=bodystyle_encoder.get_feature_names_out(['bodystyle']),
