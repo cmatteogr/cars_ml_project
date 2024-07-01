@@ -610,7 +610,7 @@ def preprocess(cars_filepath, test_size=0.2, price_threshold=1500, make_frequenc
         'models_filenames': {
             'imputer_model_filename': imputer_model_filename,
             'scaler_model_filename': scaler_model_filename,
-            'iso_forest_model_filename': iso_forest_model_filename,
+            'outlier_detection_filename': iso_forest_model_filename,
             'hasher_model_model_filename': hasher_model_model_filename,
             'ohe_drivetrain_model_filename': ohe_drivetrain_model_filename,
             'ohe_make_model_filename': ohe_make_model_filename,
