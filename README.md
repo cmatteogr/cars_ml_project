@@ -16,9 +16,9 @@ You will find in this repo:
   - Deployment conditionals is used to define when a model can be deployed based on business rules and/or model performance to complete the model training pipeline.
  
 ## Requirements
-Install Python 3.11
-Install the libraries using requirements.txt.
-Add the cars.csv dataset CSV file (Check [Cars Scrapy](https://github.com/cmatteogr/cars_scrapy) project) in the folder .\data\data_exploration\input\
+* Install Python 3.11
+* Install the libraries using requirements.txt.
+* Add the cars.csv dataset CSV file (Check [Cars Scrapy](https://github.com/cmatteogr/cars_scrapy) project) in the folder .\data\data_exploration\input\
 
 ## Usage
 Execute the script train_pipeline_cars_price_regressor.py to start the model training pipeline, you can select the model to train using the variable 'model_tool' (e.g. model_tool = 'randomforest'), the preprocess script works the same for all the models except for the neural networks models where Normalization transformation is executed
