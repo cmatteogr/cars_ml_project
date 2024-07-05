@@ -15,7 +15,7 @@ You will find in this repo:
   - Testing script used to evaluate the model performance using dedicated metrics like R2, RMSE, MSE, MAE and residuals plot.
   - Deployment conditionals is used to define when a model can be deployed based on business rules and/or model performance to complete the model training pipeline.
  
-## Requirements
+## Prerequisites
 * Install Python 3.11
 * Install the libraries using requirements.txt.
 * Add the cars.csv dataset CSV file (Check [Cars Scrapy](https://github.com/cmatteogr/cars_scrapy) project) in the folder .\data\data_exploration\input\
