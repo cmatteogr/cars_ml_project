@@ -18,7 +18,7 @@ from constants import ARTIFACTS_FOLDER_PATH, DEPLOYMENT_FOLDER_PATH
 # Init datasource filepath
 cars_filepath = r'.\data\data_exploration\input\cars.csv'
 # Init model tool
-model_tool = 'randomforest'
+model_tool = 'automl'
 
 # If Neural Networks is used the normalize the data
 scale_data = model_tool in ['neural_network_tensorflow', 'neural_network_pytorch']

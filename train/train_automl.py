@@ -18,14 +18,14 @@ def train(X, y):
     X['price'] = y
 
     # Setup model
-    setup(X, target='price')
+    setup(X, target='price', use_gpu=True)
 
     # Comparing models to select the best one
-    compare_models()
+    model = compare_models()
 
     # Creating a model - let's say a Random Forest Classifier
     # You can replace 'rf' with a model of your choice
-    model = create_model('rf')
+    # model = create_model('rf')
 
     # Optional: Tuning the model for better performance
     tuned_model = tune_model(model)
