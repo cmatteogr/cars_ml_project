@@ -18,9 +18,15 @@ You will find in this repo:
 ## Prerequisites
 * Install Python 3.11
 * Install the libraries using requirements.txt.
+```bash
+pip install -r requirements.txt
+```
 * Add the cars.csv dataset CSV file (Check [Cars Scrapy](https://github.com/cmatteogr/cars_scrapy) project) in the folder .\data\data_exploration\input\
 
 ## Usage
 Execute the script train_pipeline_cars_price_regressor.py to start the model training pipeline, you can select the model to train using the variable 'model_tool' (e.g. model_tool = 'randomforest'), the preprocess script works the same for all the models except for the neural networks models where Normalization transformation is executed
-
+temp_inference.py
+```bash
+python train_pipeline_cars_price_regressor.py
+```
 **NOTE**: Depending on the model to train the resources/time needed change so be patient or be sure you are using appropriate CPU-GPU instance.
