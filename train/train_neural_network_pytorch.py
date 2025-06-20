@@ -22,7 +22,7 @@ def train(X, y):
     """
     print("Train Forward Neural Network - PyTorch model")
 
-    # train-test split for model evaluation
+    # train-evaluation split for model evaluation
     X_train, X_validation, y_train, y_validation = train_test_split(X, y, train_size=0.8, shuffle=True)
 
     # Convert to 2D PyTorch tensors

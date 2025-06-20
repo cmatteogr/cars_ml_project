@@ -30,6 +30,7 @@ X_train, y_train, X_test, y_test, preprocess_config_data = preprocess(cars_filep
                                                                       scale_data=scale_data)
 
 # Training
+# define the model to use model_tool
 match model_tool:
     case 'randomforest':
         regression_model_filename, train_results_filename = train_random_forest(X_train, y_train)
@@ -46,6 +47,7 @@ match model_tool:
 
 regression_model_filename = 'automl_model_cars_price_prediction'
 # Test
+# define the model to use model_tool
 match model_tool:
     case 'randomforest':
         model_results_filepath = test_random_forest(regression_model_filename, X_test, y_test)
