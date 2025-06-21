@@ -31,7 +31,7 @@ python train_pipeline_cars_price_regressor.py
 ```
 **NOTE**: Depending on the model to train the resources/time needed change so be patient or be sure you are using appropriate CPU-GPU instance.
 
-## External Resoruces
+## External Resources 
 This project was built by the Medellín Machine Learning - Study Group (MML-SG) community. In the following [link](https://drive.google.com/drive/u/0/folders/1nPMtg6caIef5o9S_J8WyNEvyEt5sO1VH) you can find the meetings records about it:
 * [2. Exploración de Modelos de ML y Exploración de Datos (2024-02-28 19:14 GMT-5)](https://drive.google.com/file/d/1mqpccGVjhOQTDV5c80RKk1ECNnK6DCqn/view?usp=drive_link)
 * [3. Análisis de Datos y Selección de Variables para Modelado (2024-03-06 19:08 GMT-5)](https://drive.google.com/file/d/1N9LrEJ3TYRZY6Fumxor3HircIahtwM24/view?usp=drive_link)
